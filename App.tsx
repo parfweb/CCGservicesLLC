@@ -20,9 +20,9 @@ const App: React.FC = () => {
         <Industries />
         <Work />
         <Pricing />
+        <Hosting />
         <Process />
         <Services />
-        <Hosting />
         <FAQ />
         <CTA />
       </main>
