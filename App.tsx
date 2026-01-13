@@ -17,11 +17,11 @@ const App: React.FC = () => {
       <Navbar />
       <main>
         <Hero />
-        <Services />
+        <Industries />
         <Work />
         <Pricing />
         <Process />
-        <Industries />
+        <Services />
         <Hosting />
         <FAQ />
         <CTA />
