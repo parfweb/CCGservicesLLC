@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
     { name: 'Our Work', href: '#work' },
-    { name: 'Process', href: '#process' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'FAQ', href: '#faq' },
   ];
@@ -14,7 +13,7 @@ const Navbar: React.FC = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setIsOpen(false);
-    
+
     // Handle logo click (scroll to top)
     if (href === '#top') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -42,10 +41,10 @@ const Navbar: React.FC = () => {
           <a href="#top" className="flex-shrink-0 cursor-pointer flex items-center gap-3" onClick={(e) => handleScroll(e, '#top')}>
             {/* Modern Abstract Geometric Logo */}
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-              <rect width="40" height="40" rx="12" fill="#111111"/>
+              <rect width="40" height="40" rx="12" fill="#111111" />
               {/* Abstract P: Vertical Pillar + Detached Bow */}
-              <rect x="12" y="11" width="5" height="18" rx="2.5" fill="#D2F865"/>
-              <path d="M21 11H23C26.3137 11 29 13.6863 29 17V17C29 20.3137 26.3137 23 23 23H21" stroke="#D2F865" strokeWidth="5" strokeLinecap="round"/>
+              <rect x="12" y="11" width="5" height="18" rx="2.5" fill="#D2F865" />
+              <path d="M21 11H23C26.3137 11 29 13.6863 29 17V17C29 20.3137 26.3137 23 23 23H21" stroke="#D2F865" strokeWidth="5" strokeLinecap="round" />
             </svg>
             <span className="text-xl md:text-2xl font-bold tracking-tight text-brand-black">
               ParfWeb Solutions
@@ -66,14 +65,21 @@ const Navbar: React.FC = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center gap-4">
+            <a
+              href="tel:+15551234567"
+              className="flex items-center gap-2 text-sm font-semibold text-zinc-600 hover:text-black transition-colors"
+            >
+              <Phone className="w-4 h-4 text-brand-limeDark" />
+              (555) 123-4567
+            </a>
             <a
               href="#contact"
               onClick={(e) => handleScroll(e, '#contact')}
               className="btn-primary px-6 py-3 rounded-lg text-sm font-semibold shadow-lg shadow-black/5"
             >
-              Get a Free Website Review
+              Free Quote
             </a>
           </div>
 
