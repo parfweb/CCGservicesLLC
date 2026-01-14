@@ -24,7 +24,7 @@ const MobileCallBar: React.FC = () => {
                         e.preventDefault();
                         const element = document.querySelector('#contact');
                         if (element) {
-                            const headerOffset = 85;
+                            const headerOffset = 100;
                             const elementPosition = element.getBoundingClientRect().top;
                             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
                             window.scrollTo({ top: offsetPosition, behavior: "smooth" });

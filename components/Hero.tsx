@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
-      const headerOffset = 85;
+      const headerOffset = 100;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
       window.scrollTo({
@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-gradient-to-b from-brand-gray/60 to-white">
+    <section className="relative pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-gradient-to-br from-[#F1FAF8] via-white to-[#FDFDFD]">
 
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 bg-grid-pattern bg-[length:50px_50px] opacity-[0.4] pointer-events-none [mask-image:linear-gradient(to_bottom,white_30%,transparent_100%)]"></div>
@@ -143,11 +143,20 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Desktop Only: Floating Animated Cards - Matching Original Design */}
-            <div className="hidden lg:block relative h-[420px]">
+            {/* Desktop Only: Floating Animated Cards with New Hero Image */}
+            <div className="hidden lg:block relative h-[500px]">
+
+              {/* Main Tech Image - New isometric city */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-90 pointer-events-none">
+                <img
+                  src="/hero_tech.png"
+                  alt="Tech Illustration"
+                  className="w-full h-full object-contain [mask-image:radial-gradient(circle_at_center,black_40%,transparent_80%)]"
+                />
+              </div>
 
               {/* Card 1: Local Visibility - Top Right */}
-              <div className="absolute top-0 right-0 bg-white rounded-2xl py-4 px-5 shadow-lg border border-zinc-100 animate-float-slow">
+              <div className="absolute top-4 right-[-20px] bg-white/95 backdrop-blur-sm rounded-2xl py-4 px-5 shadow-xl border border-zinc-100 animate-float-slow z-10 w-[280px]">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-brand-lime/30 flex items-center justify-center shrink-0">
                     <Database className="w-6 h-6 text-brand-limeDark" />
@@ -166,7 +175,7 @@ const Hero: React.FC = () => {
               </div>
 
               {/* Card 2: New Customer Leads - Middle Left */}
-              <div className="absolute top-[140px] left-0 bg-white rounded-2xl py-4 px-5 shadow-lg border border-zinc-100 animate-float-medium">
+              <div className="absolute top-[160px] left-[-40px] bg-white/95 backdrop-blur-sm rounded-2xl py-4 px-5 shadow-xl border border-zinc-100 animate-float-medium z-10 w-[300px]">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-brand-lime/30 flex items-center justify-center shrink-0">
                     <ArrowUpRight className="w-6 h-6 text-brand-limeDark" />
@@ -185,7 +194,7 @@ const Hero: React.FC = () => {
               </div>
 
               {/* Card 3: Mobile Friendly - Bottom Right */}
-              <div className="absolute bottom-[40px] right-8 bg-white rounded-2xl py-4 px-5 shadow-lg border border-zinc-100 animate-float-fast">
+              <div className="absolute bottom-[20px] right-2 bg-white/95 backdrop-blur-sm rounded-2xl py-4 px-5 shadow-xl border border-zinc-100 animate-float-fast z-10 w-[260px]">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-zinc-900 flex items-center justify-center shrink-0">
                     <Smartphone className="w-6 h-6 text-white" />
