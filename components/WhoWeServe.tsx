@@ -77,7 +77,7 @@ const WhoWeServe: React.FC = () => {
                         Websites Built for Your Industry
                     </h2>
                     <p className="text-zinc-500 max-w-2xl mx-auto text-lg">
-                        We know your business. We build websites that speak to YOUR customers—not generic templates.
+                        We know your business. We build websites that speak to YOUR customers - not generic templates.
                     </p>
                 </div>
 
