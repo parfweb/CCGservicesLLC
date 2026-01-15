@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { X, ShoppingBag, Search, Menu, ArrowRight, Heart, ChevronLeft, ChevronRight, Plus, Minus, Instagram, Twitter, Facebook } from 'lucide-react';
 
 interface Props {
@@ -128,7 +128,7 @@ const NovaBoutiqueDemo: React.FC<Props> = ({ onClose }) => {
             </div>
         )}
         <div className="bg-white/80 backdrop-blur-md text-neutral-900 px-6 py-3 rounded-full shadow-2xl flex items-center gap-4 border border-neutral-200">
-          <span className="text-xs font-bold uppercase tracking-widest border-r border-neutral-300 pr-4 text-neutral-500">ParfWeb Case Study</span>
+          <span className="text-xs font-bold uppercase tracking-widest border-r border-neutral-300 pr-4 text-neutral-500">CCG Services LLC Case Study</span>
           <button 
             onClick={onClose}
             className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-neutral-900 hover:text-neutral-600 transition-colors"
@@ -357,7 +357,7 @@ const NovaBoutiqueDemo: React.FC<Props> = ({ onClose }) => {
                 </div>
             </div>
             <div className="max-w-[1800px] mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest border-t border-neutral-100 pt-8">
-                <p>© 2024 Nova Boutique. All rights reserved.</p>
+                <p>Â© 2024 Nova Boutique. All rights reserved.</p>
                 <div className="flex gap-6 mt-4 md:mt-0">
                     <a href="#" onClick={(e) => handleLink(e, 'toast:Opening Privacy Policy...', false)} className="hover:text-neutral-900">Privacy Policy</a>
                     <a href="#" onClick={(e) => handleLink(e, 'toast:Opening Terms of Use...', false)} className="hover:text-neutral-900">Terms of Use</a>
@@ -456,7 +456,7 @@ const NovaBoutiqueDemo: React.FC<Props> = ({ onClose }) => {
 
                        <div className="mt-8 space-y-3">
                            <button onClick={() => { addToCart(selectedProduct); setActiveModal(null); }} className="w-full bg-neutral-900 text-white py-4 text-xs font-bold uppercase tracking-widest hover:bg-neutral-800 transition-colors">
-                               Add to Bag — ${selectedProduct.price}
+                               Add to Bag â€” ${selectedProduct.price}
                            </button>
                            <button className="w-full border border-neutral-200 py-4 text-xs font-bold uppercase tracking-widest hover:border-neutral-900 transition-colors flex items-center justify-center gap-2">
                                <Heart className="w-4 h-4" /> Save to Wishlist

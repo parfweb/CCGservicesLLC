@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, Eye, Star } from 'lucide-react';
+import { ArrowRight, Eye, Star, CheckCircle2 } from 'lucide-react';
 import ApexLogisticsDemo from './demos/ApexLogisticsDemo';
 import NexusTechDemo from './demos/NexusTechDemo';
 import EstatePrimeDemo from './demos/EstatePrimeDemo';
@@ -14,6 +14,7 @@ interface Project {
   description: string;
   image: string;
   result?: string;
+  benefits: string[];
   hasDemo?: boolean;
 }
 
@@ -23,8 +24,13 @@ const initialProjects: Project[] = [
     title: "Meridian Global",
     category: "Logistics & Freight",
     description: "Enterprise supply chain management with real-time tracking.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+    image: "/screenshots/meridian-global.png",
     result: "+340% more leads",
+    benefits: [
+      "More inbound customer calls",
+      "Found on Google searches",
+      "Professional brand image"
+    ],
     hasDemo: true
   },
   {
@@ -32,8 +38,13 @@ const initialProjects: Project[] = [
     title: "Nexus Cloud",
     category: "SaaS Product",
     description: "Real-time infrastructure monitoring dashboard.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+    image: "/screenshots/nexus-cloud.png",
     result: "2x conversions",
+    benefits: [
+      "Higher visitor-to-customer rate",
+      "Clear value communication",
+      "Easy sign-up process"
+    ],
     hasDemo: true
   },
   {
@@ -41,8 +52,13 @@ const initialProjects: Project[] = [
     title: "Estate Prime",
     category: "Real Estate",
     description: "Luxury property listing portal with virtual tours.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    image: "/screenshots/estate-prime.png",
     result: "Page 1 on Google",
+    benefits: [
+      "Top Google rankings locally",
+      "More property inquiries",
+      "Mobile-friendly experience"
+    ],
     hasDemo: true
   },
   {
@@ -50,8 +66,13 @@ const initialProjects: Project[] = [
     title: "Zenith Fitness",
     category: "Health & Wellness",
     description: "Membership portal and class scheduling app.",
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800",
+    image: "/screenshots/zenith-fitness.png",
     result: "40% more bookings",
+    benefits: [
+      "Online class bookings 24/7",
+      "Reduced front desk workload",
+      "Increased membership signups"
+    ],
     hasDemo: true
   },
   {
@@ -59,8 +80,13 @@ const initialProjects: Project[] = [
     title: "Nova Boutique",
     category: "E-Commerce",
     description: "High-fashion retail store with seamless checkout.",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800",
+    image: "/screenshots/nova-boutique.png",
     result: "3x online sales",
+    benefits: [
+      "Smooth checkout process",
+      "Mobile shopping ready",
+      "Customers buy more online"
+    ],
     hasDemo: true
   },
   {
@@ -68,8 +94,13 @@ const initialProjects: Project[] = [
     title: "Construct One",
     category: "Construction",
     description: "Corporate identity and project portfolio showcase.",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800",
+    image: "/screenshots/construct-one.png",
     result: "First page Google",
+    benefits: [
+      "Win larger contracts",
+      "Showcase past projects",
+      "Stand out from competitors"
+    ],
     hasDemo: true
   }
 ];
@@ -147,7 +178,7 @@ const Work: React.FC = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover object-left-top origin-top-left transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Result Badge */}
@@ -169,7 +200,17 @@ const Work: React.FC = () => {
                     <h4 className="text-lg font-bold text-zinc-900 group-hover:text-brand-limeDark transition-colors">{project.title}</h4>
                     <span className="text-xs font-medium px-2 py-1 bg-zinc-100 rounded text-zinc-500">{project.category}</span>
                   </div>
-                  <p className="text-zinc-500 text-sm">{project.description}</p>
+                  <p className="text-zinc-500 text-sm mb-3">{project.description}</p>
+
+                  {/* Benefits List */}
+                  <div className="space-y-1.5">
+                    {project.benefits.map((benefit, index) => (
+                      <div key={index} className="flex items-start gap-2 text-xs text-zinc-600">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-brand-lime flex-shrink-0 mt-0.5" />
+                        <span>{benefit}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </a>
             ))}

@@ -85,11 +85,11 @@ const Hero: React.FC = () => {
                 Get Your Free Quote <ArrowRight className="w-5 h-5" />
               </a>
               <a
-                href="tel:+15551234567"
+                href="tel:9177688896"
                 className="px-6 py-4 bg-white/90 backdrop-blur-sm border-2 border-zinc-200 text-zinc-700 rounded-xl font-bold text-base hover:bg-white hover:border-zinc-300 transition-all flex items-center justify-center gap-2 shadow-md"
               >
                 <Phone className="w-5 h-5 text-brand-limeDark" />
-                (555) 123-4567
+                (917) 768-8896
               </a>
             </div>
 

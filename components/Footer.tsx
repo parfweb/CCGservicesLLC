@@ -81,12 +81,11 @@ const Footer: React.FC = () => {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <a href="#top" className="flex items-center gap-3 cursor-pointer mb-6" onClick={(e) => handleScroll(e, '#top')}>
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-                  <rect width="40" height="40" rx="12" fill="#D2F865" />
-                  <rect x="12" y="11" width="5" height="18" rx="2.5" fill="#111111" />
-                  <path d="M21 11H23C26.3137 11 29 14.5817 29 17V17C29 20.3137 26.3137 23 23 23H21" stroke="#111111" strokeWidth="5" strokeLinecap="round" />
+                <svg width="84" height="48" viewBox="0 0 70 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                  <rect width="70" height="40" rx="12" fill="#D2F865" />
+                  <path d="M22 14 A 8 8 0 1 0 22 26 M41 14 A 8 8 0 1 0 41 26 M60 14 A 8 8 0 1 0 60 26 M60 20 H55" stroke="#111111" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <span className="text-2xl font-bold text-white">ParfWeb Solutions</span>
+                <span className="text-2xl font-bold text-white">CCG Services LLC</span>
               </a>
               <p className="text-zinc-400 leading-relaxed mb-6 max-w-md">
                 Professional web design and digital marketing for local service businesses. We help plumbers, electricians, salons, and small business owners get found online and grow their customer base.
@@ -125,22 +124,22 @@ const Footer: React.FC = () => {
                 <li className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-brand-lime shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-white font-medium">(555) 123-4567</p>
+                    <p className="text-white font-medium">(917) 768-8896</p>
                     <p className="text-zinc-500 text-sm">Mon-Fri, 9am-6pm EST</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-brand-lime shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-white font-medium">hello@parfweb.com</p>
+                    <p className="text-white font-medium">hello@ccgservicesllc.com</p>
                     <p className="text-zinc-500 text-sm">We reply within 24 hours</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-brand-lime shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-white font-medium">Serving All 50 States</p>
-                    <p className="text-zinc-500 text-sm">Remote-first agency</p>
+                    <p className="text-white font-medium">721 Avenue U</p>
+                    <p className="text-zinc-500 text-sm">Brooklyn, NY 11223</p>
                   </div>
                 </li>
               </ul>
@@ -150,7 +149,7 @@ const Footer: React.FC = () => {
           {/* Bottom Bar */}
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-zinc-500 text-sm">
-              © {new Date().getFullYear()} ParfWeb Solutions LLC. All rights reserved.
+              © {new Date().getFullYear()} CCG Services LLC. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" onClick={(e) => openModal(e, 'privacy')} className="text-zinc-400 hover:text-white transition-colors">Privacy Policy</a>
@@ -174,7 +173,7 @@ const Footer: React.FC = () => {
                 <h2 className="text-2xl font-bold mb-4">Privacy Policy</h2>
                 <p className="text-sm text-zinc-500 mb-6">Last updated: {new Date().toLocaleDateString()}</p>
                 <div className="space-y-4 text-zinc-600">
-                  <p>At ParfWeb Solutions LLC, we respect your privacy and are committed to protecting the personal information you share with us. This policy outlines how we collect, use, and safeguard your data.</p>
+                  <p>At CCG Services LLC, we respect your privacy and are committed to protecting the personal information you share with us. This policy outlines how we collect, use, and safeguard your data.</p>
                   <h3 className="text-lg font-bold text-black mt-6">1. Information We Collect</h3>
                   <p>We collect information you provide directly to us, such as when you fill out a contact form, request a quote, or sign up for our services.</p>
                   <h3 className="text-lg font-bold text-black mt-6">2. How We Use Your Information</h3>
@@ -182,7 +181,7 @@ const Footer: React.FC = () => {
                   <h3 className="text-lg font-bold text-black mt-6">3. Data Security</h3>
                   <p>We implement appropriate technical and organizational measures to protect your personal data against unauthorized access.</p>
                   <h3 className="text-lg font-bold text-black mt-6">4. Contact Us</h3>
-                  <p>If you have questions about this policy, contact us at hello@parfweb.com or call (555) 123-4567.</p>
+                  <p>If you have questions about this policy, contact us at hello@ccgservicesllc.com or call (917) 768-8896.</p>
                 </div>
               </div>
             )}
@@ -192,9 +191,9 @@ const Footer: React.FC = () => {
                 <h2 className="text-2xl font-bold mb-4">Terms of Service</h2>
                 <p className="text-sm text-zinc-500 mb-6">Last updated: {new Date().toLocaleDateString()}</p>
                 <div className="space-y-4 text-zinc-600">
-                  <p>By accessing and using the ParfWeb Solutions website and services, you agree to comply with and be bound by the following terms and conditions.</p>
+                  <p>By accessing and using the CCG Services LLC website and services, you agree to comply with and be bound by the following terms and conditions.</p>
                   <h3 className="text-lg font-bold text-black mt-6">1. Services Provided</h3>
-                  <p>ParfWeb Solutions LLC provides digital services including Web Design, Website Hosting, Maintenance, and Search Engine Optimization for small businesses.</p>
+                  <p>CCG Services LLC provides digital services including Web Design, Website Hosting, Maintenance, and Search Engine Optimization for small businesses.</p>
                   <h3 className="text-lg font-bold text-black mt-6">2. Payments & Billing</h3>
                   <p>A 50% deposit is required to commence work on new website projects. Recurring services (hosting, maintenance) are billed monthly in advance.</p>
                   <h3 className="text-lg font-bold text-black mt-6">3. Intellectual Property</h3>

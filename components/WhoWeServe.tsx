@@ -1,54 +1,94 @@
 import React from 'react';
-import { Wrench, Zap, Scissors, Paintbrush, TreeDeciduous, Sparkles, Truck, Stethoscope, ArrowRight } from 'lucide-react';
+import { Wrench, Zap, Scissors, Paintbrush, TreeDeciduous, Sparkles, Wind, Stethoscope, ArrowRight, CheckCircle2, Droplets } from 'lucide-react';
 
 const WhoWeServe: React.FC = () => {
     const industries = [
         {
             icon: <Wrench className="w-7 h-7" />,
             name: "Plumbers",
-            desc: "Get found when pipes burst. 24/7 lead capture.",
+            desc: "Stop losing emergency jobs to competitors who answer first.",
+            benefits: [
+                "24/7 lead capture when pipes burst",
+                "Service area maps to dominate locally",
+                "Emergency contact buttons"
+            ],
             color: "bg-blue-500"
         },
         {
             icon: <Zap className="w-7 h-7" />,
             name: "Electricians",
-            desc: "Show your licenses. Book service calls online.",
+            desc: "Customers want proof you're licensed and legit before calling.",
+            benefits: [
+                "Showcase licenses & certifications",
+                "Book service calls online instantly",
+                "Get found for 'electrician near me'"
+            ],
             color: "bg-yellow-500"
         },
         {
-            icon: <Scissors className="w-7 h-7" />,
+            icon: <Sparkles className="w-7 h-7" />,
             name: "Nail Salons",
-            desc: "Online booking, portfolio galleries, loyalty features.",
+            desc: "Wasted hours answering the same booking questions all day?",
+            benefits: [
+                "Online booking saves 10+ hours/week",
+                "Portfolio galleries attract clients",
+                "Loyalty programs for repeat visits"
+            ],
             color: "bg-pink-500"
         },
         {
             icon: <Paintbrush className="w-7 h-7" />,
             name: "Painters & Contractors",
-            desc: "Before/after galleries that sell your work.",
+            desc: "Your work speaks for itself - if people can actually see it.",
+            benefits: [
+                "Before/after galleries that sell jobs",
+                "Instant quote request forms",
+                "Project portfolio showcase"
+            ],
             color: "bg-orange-500"
         },
         {
             icon: <TreeDeciduous className="w-7 h-7" />,
             name: "Landscaping",
-            desc: "Seasonal services, project showcases, estimates.",
+            desc: "Seasonal work means you need leads all year round.",
+            benefits: [
+                "Seasonal service promotions",
+                "Project photo galleries",
+                "Online estimate requests"
+            ],
             color: "bg-green-600"
         },
         {
-            icon: <Sparkles className="w-7 h-7" />,
+            icon: <Droplets className="w-7 h-7" />,
             name: "Cleaning Services",
-            desc: "Service areas, pricing tables, quick quotes.",
+            desc: "Customers need quick quotes, not phone tag.",
+            benefits: [
+                "Service area coverage maps",
+                "Instant pricing calculators",
+                "One-click quote requests"
+            ],
             color: "bg-purple-500"
         },
         {
-            icon: <Truck className="w-7 h-7" />,
+            icon: <Wind className="w-7 h-7" />,
             name: "HVAC & Heating",
-            desc: "Emergency contact features, maintenance plans.",
+            desc: "When the AC breaks, customers call whoever shows up first online.",
+            benefits: [
+                "Emergency contact features",
+                "Maintenance plan sign-ups",
+                "Service scheduling 24/7"
+            ],
             color: "bg-red-500"
         },
         {
             icon: <Stethoscope className="w-7 h-7" />,
             name: "Dental & Medical",
-            desc: "HIPAA-compliant forms, patient portals, booking.",
+            desc: "Patients expect online booking and secure forms in 2026.",
+            benefits: [
+                "HIPAA-compliant patient forms",
+                "Online appointment booking",
+                "Insurance & payment info"
+            ],
             color: "bg-teal-500"
         },
     ];
@@ -91,8 +131,18 @@ const WhoWeServe: React.FC = () => {
                             <div className={`w-14 h-14 ${item.color} rounded-2xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform`}>
                                 {item.icon}
                             </div>
-                            <h3 className="font-bold text-lg text-brand-black mb-1">{item.name}</h3>
-                            <p className="text-zinc-500 text-sm leading-relaxed">{item.desc}</p>
+                            <h3 className="font-bold text-lg text-brand-black mb-2">{item.name}</h3>
+                            <p className="text-zinc-600 text-sm leading-relaxed mb-4">{item.desc}</p>
+
+                            {/* Benefits for each industry */}
+                            <div className="space-y-2 pt-3 border-t border-zinc-100">
+                                {item.benefits.map((benefit, bIdx) => (
+                                    <div key={bIdx} className="flex items-start gap-2 text-xs text-zinc-600">
+                                        <CheckCircle2 className="w-3.5 h-3.5 text-brand-lime flex-shrink-0 mt-0.5" />
+                                        <span>{benefit}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     ))}
                 </div>

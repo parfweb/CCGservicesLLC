@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { X, Search, Globe, Shield, Clock, MapPin, Anchor, Plane, ArrowRight, Menu, CheckCircle2, User, Lock, FileText, Leaf, ChevronRight, Briefcase } from 'lucide-react';
 
 interface Props {
@@ -64,7 +64,7 @@ const ApexLogisticsDemo: React.FC<Props> = ({ onClose }) => {
             </div>
         )}
         <div className="bg-black/80 backdrop-blur-md text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-4 border border-white/10">
-          <span className="text-sm font-medium border-r border-white/20 pr-4">ParfWeb Case Study</span>
+          <span className="text-sm font-medium border-r border-white/20 pr-4">CCG Services LLC Case Study</span>
           <button 
             onClick={onClose}
             className="flex items-center gap-2 text-sm font-bold text-amber-500 hover:text-white transition-colors"
@@ -336,7 +336,7 @@ const ApexLogisticsDemo: React.FC<Props> = ({ onClose }) => {
                
                {/* Floating Tech Card */}
                <div className="absolute -bottom-10 -left-10 bg-white text-slate-900 p-6 rounded-xl shadow-2xl max-w-xs border-l-4 border-amber-500 hidden md:block">
-                 <h4 className="font-bold text-lg mb-2">MeridianOS™</h4>
+                 <h4 className="font-bold text-lg mb-2">MeridianOSâ„¢</h4>
                  <p className="text-slate-500 text-sm mb-4">Our proprietary cloud platform manages all your logistics data in one place.</p>
                  <div className="flex items-center gap-2 text-xs font-bold text-slate-400 uppercase">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div> Live Sync Active
@@ -415,7 +415,7 @@ const ApexLogisticsDemo: React.FC<Props> = ({ onClose }) => {
               </div>
            </div>
            <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center">
-              <p>© 2024 Meridian Global Logistics. Demo Project.</p>
+              <p>Â© 2024 Meridian Global Logistics. Demo Project.</p>
               <div className="flex gap-6 mt-4 md:mt-0">
                 <a href="#" onClick={(e) => handleLink(e, 'modal', 'privacy')} className="hover:text-white">Privacy</a>
                 <a href="#" onClick={(e) => handleLink(e, 'modal', 'terms')} className="hover:text-white">Terms</a>
@@ -513,7 +513,7 @@ const ApexLogisticsDemo: React.FC<Props> = ({ onClose }) => {
                     <div className="prose prose-sm prose-slate">
                        <p>This is a demonstration of the <strong>Meridian Global</strong> website structure.</p>
                        <p>In a production environment, this page would contain detailed information regarding {activeModal}.</p>
-                       <p>Meridian Global represents the pinnacle of logistics website design—clean, authoritative, and conversion-focused.</p>
+                       <p>Meridian Global represents the pinnacle of logistics website designâ€”clean, authoritative, and conversion-focused.</p>
                     </div>
                  )}
                </div>

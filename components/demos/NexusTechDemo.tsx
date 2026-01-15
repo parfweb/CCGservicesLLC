@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { X, Activity, Server, Shield, Zap, Globe, Cpu, ChevronRight, Play, Terminal, Check, BarChart3, Database, Lock, Menu, ArrowRight, CheckCircle2, Github, Twitter, FileText } from 'lucide-react';
 
 interface Props {
@@ -85,7 +85,7 @@ const NexusTechDemo: React.FC<Props> = ({ onClose }) => {
           </div>
         )}
         <div className="bg-white/10 backdrop-blur-md text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-4 border border-white/20">
-          <span className="text-sm font-medium border-r border-white/20 pr-4">ParfWeb Case Study</span>
+          <span className="text-sm font-medium border-r border-white/20 pr-4">CCG Services LLC Case Study</span>
           <button
             onClick={onClose}
             className="flex items-center gap-2 text-sm font-bold text-cyan-400 hover:text-white transition-colors"
@@ -412,7 +412,7 @@ const NexusTechDemo: React.FC<Props> = ({ onClose }) => {
               <a href="#" onClick={(e) => handleLink(e, 'toast', 'Redirecting to GitHub...')} className="hover:text-white transition-colors flex items-center gap-1"><Github className="w-3 h-3" /> GitHub</a>
             </div>
             <div>
-              © 2024 Nexus Cloud Inc.
+              Â© 2024 Nexus Cloud Inc.
             </div>
           </div>
         </footer>
@@ -437,7 +437,7 @@ const NexusTechDemo: React.FC<Props> = ({ onClose }) => {
                     </div>
                     <div>
                       <label className="block text-xs font-bold text-slate-500 uppercase mb-1">Password</label>
-                      <input type="password" className="w-full bg-[#0B0C15] border border-white/10 rounded p-3 text-white focus:border-indigo-500 outline-none transition-colors" placeholder="••••••••" />
+                      <input type="password" className="w-full bg-[#0B0C15] border border-white/10 rounded p-3 text-white focus:border-indigo-500 outline-none transition-colors" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" />
                     </div>
                     <button className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 rounded transition-colors">Log In</button>
                   </form>

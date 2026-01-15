@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { X, Menu, ArrowRight, HardHat, Ruler, Hammer, Building2, ChevronRight, CheckCircle2, Phone, Mail, MapPin, Instagram, Linkedin, Facebook, Play, Download } from 'lucide-react';
 
 interface Props {
@@ -134,7 +134,7 @@ const ConstructOneDemo: React.FC<Props> = ({ onClose }) => {
             </div>
         )}
         <div className="bg-white/90 backdrop-blur-md text-zinc-900 px-6 py-3 rounded-full shadow-2xl flex items-center gap-4 border border-zinc-200">
-          <span className="text-xs font-bold uppercase tracking-widest border-r border-zinc-300 pr-4 text-zinc-500">ParfWeb Case Study</span>
+          <span className="text-xs font-bold uppercase tracking-widest border-r border-zinc-300 pr-4 text-zinc-500">CCG Services LLC Case Study</span>
           <button 
             onClick={onClose}
             className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-orange-600 hover:text-zinc-900 transition-colors"
@@ -404,7 +404,7 @@ const ConstructOneDemo: React.FC<Props> = ({ onClose }) => {
                  </div>
                  <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">ZERO ACCIDENTS. <br/>NO EXCEPTIONS.</h2>
                  <p className="text-white/90 text-lg mb-8 leading-relaxed">
-                    At Construct One, safety isn't just a policy—it's a core value. We believe that every accident is preventable, and we are committed to sending every worker home safely to their families at the end of each day.
+                    At Construct One, safety isn't just a policyâ€”it's a core value. We believe that every accident is preventable, and we are committed to sending every worker home safely to their families at the end of each day.
                  </p>
                  <ul className="space-y-4 mb-10">
                     {['Daily Safety Briefings', 'Ongoing OSHA Training', 'Subcontractor Safety Prequalification', 'Site-Specific Safety Plans'].map((item, i) => (
@@ -487,7 +487,7 @@ const ConstructOneDemo: React.FC<Props> = ({ onClose }) => {
            </div>
            
            <div className="max-w-[1600px] mx-auto px-6 md:px-12 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center text-xs uppercase tracking-wider">
-              <p>© 2024 Construct One Inc. All Rights Reserved.</p>
+              <p>Â© 2024 Construct One Inc. All Rights Reserved.</p>
               <div className="flex gap-8 mt-4 md:mt-0">
                  <a href="#" onClick={(e) => handleLink(e, 'toast', 'Privacy Policy')} className="hover:text-white">Privacy Policy</a>
                  <a href="#" onClick={(e) => handleLink(e, 'toast', 'Terms of Use')} className="hover:text-white">Terms of Use</a>

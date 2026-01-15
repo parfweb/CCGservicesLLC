@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { X, Calendar, User, Clock, MapPin, ChevronRight, Activity, Flame, Trophy, Play, CheckCircle2, Dumbbell, Zap, Instagram, Facebook, Youtube, Menu, ArrowRight, BarChart, LogOut } from 'lucide-react';
 
 interface Props {
@@ -92,7 +92,7 @@ const ZenithFitnessDemo: React.FC<Props> = ({ onClose }) => {
             </div>
         )}
         <div className="bg-zinc-900/90 backdrop-blur-md text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-4 border border-zinc-800">
-          <span className="text-xs font-bold uppercase tracking-widest border-r border-zinc-700 pr-4 text-zinc-500">ParfWeb Case Study</span>
+          <span className="text-xs font-bold uppercase tracking-widest border-r border-zinc-700 pr-4 text-zinc-500">CCG Services LLC Case Study</span>
           <button 
             onClick={onClose}
             className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-cyan-400 hover:text-white transition-colors"
@@ -406,7 +406,7 @@ const ZenithFitnessDemo: React.FC<Props> = ({ onClose }) => {
                        </div>
                        <div>
                           <h4 className="text-xl font-bold text-white">{selectedClass.class}</h4>
-                          <p className="text-zinc-500 text-sm">{selectedClass.time} • {selectedClass.trainer}</p>
+                          <p className="text-zinc-500 text-sm">{selectedClass.time} â€¢ {selectedClass.trainer}</p>
                        </div>
                     </div>
                     
@@ -473,7 +473,7 @@ const ZenithFitnessDemo: React.FC<Props> = ({ onClose }) => {
                         <div className="flex justify-between items-center mb-10">
                            <div>
                               <h2 className="text-3xl font-black italic text-white">WELCOME BACK, ALEX</h2>
-                              <p className="text-zinc-500">You're on a 3-day streak! 🔥</p>
+                              <p className="text-zinc-500">You're on a 3-day streak! ðŸ”¥</p>
                            </div>
                            <div className="hidden md:block w-12 h-12 bg-zinc-800 rounded-full overflow-hidden border border-zinc-700">
                               <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=200" alt="User" />
@@ -490,7 +490,7 @@ const ZenithFitnessDemo: React.FC<Props> = ({ onClose }) => {
                                        <div>
                                           <div className="text-xs font-bold uppercase tracking-widest bg-black/20 inline-block px-3 py-1 rounded mb-3">Up Next</div>
                                           <h3 className="text-4xl font-black italic">HIIT INFERNO</h3>
-                                          <p className="text-cyan-100 mt-1">Today, 06:00 PM • with Alex S.</p>
+                                          <p className="text-cyan-100 mt-1">Today, 06:00 PM â€¢ with Alex S.</p>
                                        </div>
                                        <div className="text-center bg-white/10 p-4 rounded-xl backdrop-blur-sm">
                                           <div className="text-3xl font-bold">45</div>
@@ -513,7 +513,7 @@ const ZenithFitnessDemo: React.FC<Props> = ({ onClose }) => {
                                           <div className="w-px h-10 bg-zinc-800"></div>
                                           <div>
                                              <h4 className="font-bold text-white text-lg">{i % 2 === 0 ? 'Power Lift' : 'Cycle & Crush'}</h4>
-                                             <p className="text-zinc-500 text-sm">Studio {i+1} • {i % 2 === 0 ? 'Mike T.' : 'Sarah J.'}</p>
+                                             <p className="text-zinc-500 text-sm">Studio {i+1} â€¢ {i % 2 === 0 ? 'Mike T.' : 'Sarah J.'}</p>
                                           </div>
                                        </div>
                                        <button className="text-zinc-500 hover:text-red-500 text-sm font-bold transition-colors">Cancel</button>

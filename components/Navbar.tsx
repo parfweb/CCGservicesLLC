@@ -40,14 +40,12 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <a href="#top" className="flex-shrink-0 cursor-pointer flex items-center gap-3" onClick={(e) => handleScroll(e, '#top')}>
             {/* Modern Abstract Geometric Logo - Bigger */}
-            <svg width="48" height="48" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-              <rect width="40" height="40" rx="12" fill="#111111" />
-              {/* Abstract P: Vertical Pillar + Detached Bow */}
-              <rect x="12" y="11" width="5" height="18" rx="2.5" fill="#D2F865" />
-              <path d="M21 11H23C26.3137 11 29 13.6863 29 17V17C29 20.3137 26.3137 23 23 23H21" stroke="#D2F865" strokeWidth="5" strokeLinecap="round" />
+            <svg width="84" height="48" viewBox="0 0 70 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+              <rect width="70" height="40" rx="12" fill="#111111" />
+              <path d="M22 14 A 8 8 0 1 0 22 26 M41 14 A 8 8 0 1 0 41 26 M60 14 A 8 8 0 1 0 60 26 M60 20 H55" stroke="#D2F865" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <span className="text-2xl font-bold tracking-tight text-brand-black">
-              ParfWeb Solutions
+              CCG Services LLC
             </span>
           </a>
 
@@ -68,13 +66,13 @@ const Navbar: React.FC = () => {
           {/* CTA Buttons - Bigger & More Prominent */}
           <div className="hidden lg:flex items-center gap-6">
             <a
-              href="tel:+15551234567"
+              href="tel:9177688896"
               className="flex items-center gap-2 text-base font-bold text-zinc-700 hover:text-black transition-colors"
             >
               <div className="w-10 h-10 rounded-full bg-brand-lime/20 flex items-center justify-center">
                 <Phone className="w-5 h-5 text-brand-limeDark" />
               </div>
-              (555) 123-4567
+              (917) 768-8896
             </a>
             <a
               href="#contact"
@@ -113,11 +111,11 @@ const Navbar: React.FC = () => {
             ))}
             <div className="pt-4 border-t border-zinc-200">
               <a
-                href="tel:+15551234567"
+                href="tel:9177688896"
                 className="flex items-center gap-3 text-lg font-bold text-zinc-700 mb-4"
               >
                 <Phone className="w-5 h-5 text-brand-limeDark" />
-                (555) 123-4567
+                (917) 768-8896
               </a>
               <a
                 href="#contact"

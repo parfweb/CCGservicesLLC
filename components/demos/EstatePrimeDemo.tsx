@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { X, Search, MapPin, BedDouble, Bath, Square, Heart, Video, Phone, Mail, ArrowRight, Menu, CheckCircle2, ChevronRight, PlayCircle, Star } from 'lucide-react';
 
 interface Props {
@@ -158,7 +158,7 @@ const EstatePrimeDemo: React.FC<Props> = ({ onClose }) => {
             </div>
         )}
         <div className="bg-white/90 backdrop-blur-md text-stone-900 px-6 py-3 rounded-full shadow-2xl flex items-center gap-4 border border-stone-200">
-          <span className="text-xs font-bold uppercase tracking-widest border-r border-stone-300 pr-4">ParfWeb Case Study</span>
+          <span className="text-xs font-bold uppercase tracking-widest border-r border-stone-300 pr-4">CCG Services LLC Case Study</span>
           <button 
             onClick={onClose}
             className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-600 hover:text-stone-900 transition-colors"
@@ -415,7 +415,7 @@ const EstatePrimeDemo: React.FC<Props> = ({ onClose }) => {
               </div>
            </div>
            <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-stone-900 flex justify-between items-center text-xs text-stone-600 uppercase tracking-wider">
-              <p>© 2024 Estate Prime Realty.</p>
+              <p>Â© 2024 Estate Prime Realty.</p>
               <div className="flex gap-6">
                  <a href="#" className="hover:text-white">Privacy</a>
                  <a href="#" className="hover:text-white">Terms</a>

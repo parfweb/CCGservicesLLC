@@ -1,14 +1,88 @@
 import React from 'react';
-import { Truck, Scissors, Stethoscope, Coffee, Hammer, ShoppingBag, CheckCircle, Shield, Smartphone, Headphones } from 'lucide-react';
+import { Wrench, Zap, Paintbrush, Sparkles, Wind, Droplets, CheckCircle2, Stethoscope, ShoppingBag, Hammer, Shield, Smartphone, Headphones, CheckCircle } from 'lucide-react';
 
 const Industries: React.FC = () => {
   const industries = [
-    { icon: <Truck className="w-6 h-6" />, name: "Trucking & Logistics", desc: "Showcase your fleet, highlight services, and generate shipping quotes automatically." },
-    { icon: <Scissors className="w-6 h-6" />, name: "Hair Salons", desc: "Online booking, stylist portfolios, and appointment management that works 24/7." },
-    { icon: <Stethoscope className="w-6 h-6" />, name: "Dental Practices", desc: "Patient portals, online scheduling, and HIPAA-compliant forms." },
-    { icon: <Coffee className="w-6 h-6" />, name: "Coffee Shops", desc: "Menu displays, event calendars, and loyalty programs that drive repeat visits." },
-    { icon: <Hammer className="w-6 h-6" />, name: "Home Services", desc: "Plumbers, electricians, contractors - generate leads while you sleep." },
-    { icon: <ShoppingBag className="w-6 h-6" />, name: "Retail Stores", desc: "Beautiful product galleries, e-commerce, and inventory integration." },
+    {
+      icon: <Wrench className="w-6 h-6" />,
+      name: "Plumbers",
+      desc: "Stop losing emergency jobs to competitors who answer first.",
+      benefits: [
+        "24/7 lead capture when pipes burst",
+        "Service area maps to dominate locally",
+        "Emergency contact buttons"
+      ]
+    },
+    {
+      icon: <Zap className="w-6 h-6" />,
+      name: "Electricians",
+      desc: "Customers want proof you're licensed and legit before calling.",
+      benefits: [
+        "Showcase licenses & certifications",
+        "Book service calls online instantly",
+        "Get found for 'electrician near me'"
+      ]
+    },
+    {
+      icon: <Sparkles className="w-6 h-6" />,
+      name: "Nail Salons",
+      desc: "Wasted hours answering the same booking questions all day?",
+      benefits: [
+        "Online booking saves 10+ hours/week",
+        "Portfolio galleries attract clients",
+        "Loyalty programs for repeat visits"
+      ]
+    },
+    {
+      icon: <Paintbrush className="w-6 h-6" />,
+      name: "Painters & Contractors",
+      desc: "Your work speaks for itself - if people can actually see it.",
+      benefits: [
+        "Before/after galleries that sell jobs",
+        "Instant quote request forms",
+        "Project portfolio showcase"
+      ]
+    },
+    {
+      icon: <Hammer className="w-6 h-6" />,
+      name: "Landscaping",
+      desc: "Seasonal work means you need leads all year round.",
+      benefits: [
+        "Seasonal service promotions",
+        "Project photo galleries",
+        "Online estimate requests"
+      ]
+    },
+    {
+      icon: <Droplets className="w-6 h-6" />,
+      name: "Cleaning Services",
+      desc: "Customers need quick quotes, not phone tag.",
+      benefits: [
+        "Service area coverage maps",
+        "Instant pricing calculators",
+        "One-click quote requests"
+      ]
+    },
+    {
+      icon: <Wind className="w-6 h-6" />,
+      name: "HVAC & Heating",
+      desc: "When the AC breaks, customers call whoever shows up first online.",
+      benefits: [
+        "Emergency contact features",
+        "Maintenance plan sign-ups",
+        "Service scheduling 24/7"
+      ]
+    },
+    {
+      icon: <Stethoscope className="w-6 h-6" />,
+      name: "Dental & Medical",
+      desc: "Patients expect online booking and secure forms in 2026.",
+      benefits: [
+        "HIPAA-compliant patient forms",
+        "Online appointment booking",
+        "Insurance & payment info"
+      ]
+    }
   ];
 
   const benefits = [
@@ -44,20 +118,30 @@ const Industries: React.FC = () => {
 
         {/* Industries We Serve */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-brand-black mb-4">We Build Websites For Every Type of Business</h2>
+          <h2 className="text-3xl font-bold text-brand-black mb-4">Websites Built for Your Industry</h2>
           <p className="text-zinc-500 max-w-2xl mx-auto text-lg">
-            We tailor every website to the specific needs, customers, and buying behavior of your industry.
+            We know your business. We build websites that speak to YOUR customers - not generic templates.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
           {industries.map((item, idx) => (
             <div key={idx} className="bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm hover:border-brand-lime hover:shadow-md transition-all">
-              <div className="flex items-center gap-4 mb-3">
-                <span className="text-black bg-brand-lime rounded-lg p-2">{item.icon}</span>
-                <h3 className="font-bold text-lg text-brand-black">{item.name}</h3>
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-black bg-brand-lime rounded-lg p-2 flex-shrink-0">{item.icon}</span>
+                <h3 className="font-bold text-base text-brand-black">{item.name}</h3>
               </div>
-              <p className="text-zinc-600 text-sm leading-relaxed">{item.desc}</p>
+              <p className="text-zinc-600 text-sm leading-relaxed mb-4">{item.desc}</p>
+
+              {/* Benefits for each industry */}
+              <div className="space-y-2 pt-3 border-t border-zinc-100">
+                {item.benefits.map((benefit, bIdx) => (
+                  <div key={bIdx} className="flex items-start gap-2 text-xs text-zinc-600">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-brand-lime flex-shrink-0 mt-0.5" />
+                    <span>{benefit}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
@@ -66,7 +150,7 @@ const Industries: React.FC = () => {
         <div className="bg-white rounded-3xl p-8 md:p-12 border border-zinc-200 shadow-xl">
           <div className="text-center mb-12">
             <div className="inline-block px-3 py-1 bg-zinc-100 rounded-full text-zinc-500 text-xs font-bold uppercase tracking-wider mb-4">What You Get</div>
-            <h2 className="text-3xl font-bold text-brand-black mb-4">Industry-Specific Benefits That Drive Results</h2>
+            <h2 className="text-3xl font-bold text-brand-black mb-4">Industry-Specific Features That Drive Results</h2>
             <p className="text-zinc-500 max-w-2xl mx-auto">We don't just build websites - we create customized solutions that solve real business problems in your industry.</p>
           </div>
 
