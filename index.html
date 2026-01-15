@@ -126,6 +126,19 @@
 </head>
 
 <body>
+  <!-- Hidden Netlify Form for Detection -->
+  <form name="contact" netlify hidden>
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="text" name="name" />
+    <input type="text" name="business" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <select name="service"></select>
+    <select name="industry"></select>
+    <select name="budget"></select>
+    <textarea name="message"></textarea>
+  </form>
+
   <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
