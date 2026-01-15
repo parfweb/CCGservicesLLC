@@ -1,32 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import WhoWeServe from './components/WhoWeServe';
-import Work from './components/Work';
-import Pricing from './components/Pricing';
-import Hosting from './components/Hosting';
-import Testimonials from './components/Testimonials';
-import Process from './components/Process';
-import FAQ from './components/FAQ';
-import CTA from './components/CTA';
 import Footer from './components/Footer';
 import MobileCallBar from './components/MobileCallBar';
+import Home from './pages/Home';
+import IndustryPage from './pages/IndustryPage';
 
 const App: React.FC = () => {
+  const location = useLocation();
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <div className="min-h-screen bg-[#FDFDFD] text-brand-black overflow-x-hidden selection:bg-brand-lime selection:text-black pb-16 md:pb-0">
       <Navbar />
-      <main>
-        <Hero />
-        <WhoWeServe />
-        <Work />
-        <Pricing />
-        <Hosting />
-        <Testimonials />
-        <Process />
-        <FAQ />
-        <CTA />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/plumber-web-design" element={<IndustryPage industry="plumber" />} />
+        <Route path="/electrician-web-design" element={<IndustryPage industry="electrician" />} />
+        <Route path="/nail-salon-web-design" element={<IndustryPage industry="nail-salon" />} />
+        <Route path="/painter-web-design" element={<IndustryPage industry="painter" />} />
+        <Route path="/landscaping-web-design" element={<IndustryPage industry="landscaping" />} />
+        <Route path="/cleaning-web-design" element={<IndustryPage industry="cleaning" />} />
+        <Route path="/hvac-web-design" element={<IndustryPage industry="hvac" />} />
+        <Route path="/dental-web-design" element={<IndustryPage industry="dental" />} />
+      </Routes>
       <Footer />
       <MobileCallBar />
     </div>

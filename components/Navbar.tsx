@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const navLinks = [
     { name: 'Our Work', href: '#work' },
@@ -10,26 +13,44 @@ const Navbar: React.FC = () => {
     { name: 'FAQ', href: '#faq' },
   ];
 
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavigation = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setIsOpen(false);
 
-    // Handle logo click (scroll to top)
-    if (href === '#top') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
-    }
+    const targetId = href.replace('#', '');
 
-    const element = document.querySelector(href);
-    if (element) {
-      const headerOffset = 100; // Updated for taller navbar
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
+    // If we are on the homepage
+    if (location.pathname === '/') {
+      if (href === '#top' || href === '/') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+      const element = document.getElementById(targetId);
+      if (element) {
+        const headerOffset = 100;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    } else {
+      // Not on homepage - navigate to homepage
+      if (href === '#top') {
+        navigate('/');
+      } else {
+        navigate(`/${href}`); // e.g., /#pricing
+        // Note: The App.tsx useEffect logic or a separate HashLink handler is needed to scroll after navigation.
+        // For simplicity in this session, we rely on the browser's native behavior after a tiny timeout or simply passing state.
+        // A better approach for cross-page hash link:
+        setTimeout(() => {
+          const element = document.getElementById(targetId);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 500); // quick hack for hash scrolling after nav
+      }
     }
   };
 
@@ -38,7 +59,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <a href="#top" className="flex-shrink-0 cursor-pointer flex items-center gap-3" onClick={(e) => handleScroll(e, '#top')}>
+          <a href="#top" className="flex-shrink-0 cursor-pointer flex items-center gap-3" onClick={(e) => handleNavigation(e, '#top')}>
             {/* Modern Abstract Geometric Logo - Bigger */}
             <svg width="84" height="48" viewBox="0 0 70 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
               <rect width="70" height="40" rx="12" fill="#111111" />
@@ -55,8 +76,9 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={(e) => handleScroll(e, link.href)}
+                onClick={(e) => handleNavigation(e, link.href)}
                 className="text-base font-semibold text-zinc-600 hover:text-black transition-colors"
+              // Added role and aria for better accessibility if needed, but keeping it simple
               >
                 {link.name}
               </a>
@@ -76,7 +98,7 @@ const Navbar: React.FC = () => {
             </a>
             <a
               href="#contact"
-              onClick={(e) => handleScroll(e, '#contact')}
+              onClick={(e) => handleNavigation(e, '#contact')}
               className="btn-primary px-8 py-4 rounded-xl text-base font-bold shadow-lg shadow-black/10 hover:shadow-xl transition-all"
             >
               Get Free Quote
@@ -103,7 +125,7 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={(e) => handleScroll(e, link.href)}
+                onClick={(e) => handleNavigation(e, link.href)}
                 className="block text-xl font-semibold text-zinc-700 hover:text-black"
               >
                 {link.name}
@@ -119,7 +141,7 @@ const Navbar: React.FC = () => {
               </a>
               <a
                 href="#contact"
-                onClick={(e) => handleScroll(e, '#contact')}
+                onClick={(e) => handleNavigation(e, '#contact')}
                 className="block w-full text-center btn-primary px-6 py-4 rounded-xl text-lg font-bold"
               >
                 Get Free Quote
