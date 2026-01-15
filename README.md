@@ -1,6 +1,6 @@
-# CCG Services LLC - High-Performance Web Agency
+# CCG SiteSpark - High-Performance Web Agency
 
-A modern, high-performance one-page website for **CCG Services LLC**, a web design and lead generation agency. Built with React, Tailwind CSS, and Lucide Icons.
+A modern, high-performance one-page website for **CCG SiteSpark**, a web design and lead generation agency. Built with React, Tailwind CSS, and Lucide Icons.
 
 ## ✨ Features
 
@@ -35,4 +35,4 @@ A modern, high-performance one-page website for **CCG Services LLC**, a web desi
 
 ## 📄 License
 
-© 2024 CCG Services LLC. All rights reserved.
+© 2024 CCG SiteSpark. All rights reserved.

@@ -85,7 +85,7 @@ const NexusTechDemo: React.FC<Props> = ({ onClose }) => {
           </div>
         )}
         <div className="bg-white/10 backdrop-blur-md text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-4 border border-white/20">
-          <span className="text-sm font-medium border-r border-white/20 pr-4">CCG Services LLC Case Study</span>
+          <span className="text-sm font-medium border-r border-white/20 pr-4">CCG SiteSpark Case Study</span>
           <button
             onClick={onClose}
             className="flex items-center gap-2 text-sm font-bold text-cyan-400 hover:text-white transition-colors"

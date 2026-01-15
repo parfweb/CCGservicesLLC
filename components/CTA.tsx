@@ -54,7 +54,7 @@ const CTA: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold text-lg mb-1">Email</h4>
-                  <p className="text-zinc-400">hello@ccgservicesllc.com</p>
+                  <p className="text-zinc-400">hello@ccgsitespark.com</p>
                 </div>
               </div>
 

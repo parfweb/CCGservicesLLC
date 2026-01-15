@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
               <path d="M22 14 A 8 8 0 1 0 22 26 M41 14 A 8 8 0 1 0 41 26 M60 14 A 8 8 0 1 0 60 26 M60 20 H55" stroke="#D2F865" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <span className="text-2xl font-bold tracking-tight text-brand-black">
-              CCG Services LLC
+              CCG SiteSpark
             </span>
           </a>
 
