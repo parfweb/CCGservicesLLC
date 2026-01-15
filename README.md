@@ -31,8 +31,9 @@ A modern, high-performance one-page website for **CCG SiteSpark**, a web design 
    git clone https://github.com/parfweb/CCGservicesLLC.git
    ```
 2. The project is an ES6 module-based application. Open `index.html` in a modern browser (or use a local development server like Live Server).
-3. Ensure your `process.env.API_KEY` is configured for the Gemini AI features to work correctly.
+3. Ensure your `process.env.API_KEY` is
+## 📞 Contact
 
-## 📄 License
+Ready to start your project? Contact us at **hello@ccgsitespark.com** or call **(917) 768-8896**.
 
-© 2024 CCG SiteSpark. All rights reserved.
+&copy; 2026 CCG SiteSpark. All rights reserved.
