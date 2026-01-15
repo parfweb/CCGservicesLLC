@@ -4,14 +4,25 @@ import { Send, CheckCircle, Phone, Mail, MapPin, Clock } from 'lucide-react';
 const CTA: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-    // Simulate API call or email service
-    setTimeout(() => {
-      // Reset after a delay if needed, or keep showing success message
-      // setSubmitted(false); 
-    }, 5000);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    // Convert FormData to URL-encoded string for Netlify
+    const data = new URLSearchParams();
+    for (const pair of formData) {
+      data.append(pair[0], pair[1] as string);
+    }
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: data.toString(),
+    })
+      .then(() => setSubmitted(true))
+      .catch((error) => alert("Submission failed. Please try again."));
   };
 
   return (
