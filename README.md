@@ -28,7 +28,7 @@ A modern, high-performance one-page website for **CCG Services LLC**, a web desi
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/parfweb/parfweb-solutions.git
+   git clone https://github.com/parfweb/CCGservicesLLC.git
    ```
 2. The project is an ES6 module-based application. Open `index.html` in a modern browser (or use a local development server like Live Server).
 3. Ensure your `process.env.API_KEY` is configured for the Gemini AI features to work correctly.
