@@ -96,26 +96,33 @@ const CTA: React.FC = () => {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  onSubmit={handleSubmit}
+                  className="space-y-6"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-bold text-zinc-800">Your Name *</label>
-                      <input type="text" id="name" required className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all placeholder:text-zinc-400" placeholder="John Smith" />
+                      <input type="text" id="name" name="name" required className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all placeholder:text-zinc-400" placeholder="John Smith" />
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="business" className="text-sm font-bold text-zinc-800">Business Name *</label>
-                      <input type="text" id="business" required className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all placeholder:text-zinc-400" placeholder="Your Company LLC" />
+                      <input type="text" id="business" name="business" required className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all placeholder:text-zinc-400" placeholder="Your Company LLC" />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="email" className="text-sm font-bold text-zinc-800">Email Address *</label>
-                      <input type="email" id="email" required className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all placeholder:text-zinc-400" placeholder="john@company.com" />
+                      <input type="email" id="email" name="email" required className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all placeholder:text-zinc-400" placeholder="john@company.com" />
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="phone" className="text-sm font-bold text-zinc-800">Phone Number *</label>
-                      <input type="tel" id="phone" required className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all placeholder:text-zinc-400" placeholder="(917) 768-8896" />
+                      <input type="tel" id="phone" name="phone" required className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all placeholder:text-zinc-400" placeholder="(917) 768-8896" />
                     </div>
                   </div>
 
@@ -123,7 +130,7 @@ const CTA: React.FC = () => {
                     <div className="space-y-2">
                       <label htmlFor="service" className="text-sm font-bold text-zinc-800">What service do you need?</label>
                       <div className="relative">
-                        <select id="service" defaultValue="" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all appearance-none text-zinc-600">
+                        <select id="service" name="service" defaultValue="" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all appearance-none text-zinc-600">
                           <option value="" disabled>Select a service...</option>
                           <option value="web-design">Website Design & Build</option>
                           <option value="redesign">Website Redesign</option>
@@ -139,7 +146,7 @@ const CTA: React.FC = () => {
                     <div className="space-y-2">
                       <label htmlFor="industry" className="text-sm font-bold text-zinc-800">What's your industry?</label>
                       <div className="relative">
-                        <select id="industry" defaultValue="" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all appearance-none text-zinc-600">
+                        <select id="industry" name="industry" defaultValue="" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all appearance-none text-zinc-600">
                           <option value="" disabled>Select your industry...</option>
                           <option value="construction">Construction / Trades</option>
                           <option value="healthcare">Healthcare / Medical</option>
@@ -158,7 +165,7 @@ const CTA: React.FC = () => {
                   <div className="space-y-2">
                     <label htmlFor="budget" className="text-sm font-bold text-zinc-800">What's your budget?</label>
                     <div className="relative">
-                      <select id="budget" defaultValue="" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all appearance-none text-zinc-600">
+                      <select id="budget" name="budget" defaultValue="" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all appearance-none text-zinc-600">
                         <option value="" disabled>Select budget range...</option>
                         <option value="under-1k">Under $1,000</option>
                         <option value="1k-3k">$1,000 - $3,000</option>
@@ -174,7 +181,7 @@ const CTA: React.FC = () => {
 
                   <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-bold text-zinc-800">Tell us about your project</label>
-                    <textarea id="message" rows={4} className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all placeholder:text-zinc-400" placeholder="Describe your business and what you need..."></textarea>
+                    <textarea id="message" name="message" rows={4} className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all placeholder:text-zinc-400" placeholder="Describe your business and what you need..."></textarea>
                   </div>
 
                   <button type="submit" className="w-full btn-primary py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 hover:bg-zinc-800 shadow-lg shadow-black/10">
