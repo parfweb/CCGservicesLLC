@@ -15,6 +15,9 @@ const CTA: React.FC = () => {
     for (const pair of formData) {
       data.append(pair[0], pair[1] as string);
     }
+    // Add a custom subject for the email notification
+    const name = formData.get('name') as string || 'Someone';
+    data.append('subject', `New Lead: ${name} from CCG SiteSpark`);
 
     fetch("/", {
       method: "POST",
