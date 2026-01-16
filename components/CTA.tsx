@@ -146,11 +146,12 @@ const CTA: React.FC = () => {
                       <div className="relative">
                         <select id="service" name="service" defaultValue="" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all appearance-none text-zinc-600">
                           <option value="" disabled>Select a service...</option>
+                          <option value="full-package">Full Package (Website + SEO)</option>
                           <option value="web-design">Website Design & Build</option>
                           <option value="redesign">Website Redesign</option>
                           <option value="seo">SEO & Lead Generation</option>
                           <option value="maintenance">Maintenance & Hosting</option>
-                          <option value="other">Other</option>
+                          <option value="consultation">I'm not sure / Free Consultation</option>
                         </select>
                         <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                           <svg className="w-4 h-4 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -182,10 +183,9 @@ const CTA: React.FC = () => {
                       <select id="budget" name="budget" defaultValue="" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all appearance-none text-zinc-600">
                         <option value="" disabled>Select budget range...</option>
                         <option value="under-1k">Under $1,000</option>
-                        <option value="1k-3k">$1,000 - $3,000</option>
-                        <option value="3k-5k">$3,000 - $5,000</option>
-                        <option value="5k-10k">$5,000 - $10,000</option>
-                        <option value="10k-plus">$10,000+</option>
+                        <option value="1k-2.5k">$1,000 - $2,500</option>
+                        <option value="2.5k-5k">$2,500 - $5,000</option>
+                        <option value="5k-plus">$5,000+</option>
                       </select>
                       <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                         <svg className="w-4 h-4 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
