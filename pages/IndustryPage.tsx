@@ -5,6 +5,7 @@ import CTA from '../components/CTA';
 import ConstructOneDemo from '../components/demos/ConstructOneDemo';
 import PlumberDemo from '../components/demos/PlumberDemo';
 import NailSalonDemo from '../components/demos/NailSalonDemo';
+import CleaningDemo from '../components/demos/CleaningDemo';
 
 interface IndustryData {
     title: string;
@@ -136,7 +137,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "One-click quote requests",
             "Trust badges & team photos"
         ],
-        demoComponent: <CTA />
+        demoComponent: <CleaningDemo />
     },
     hvac: {
         title: "HVAC Web Design",
