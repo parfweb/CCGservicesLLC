@@ -20,8 +20,8 @@ const Home: React.FC = () => {
             </Helmet>
             <main>
                 <Hero />
-                <WhoWeServe />
                 <Work />
+                <WhoWeServe />
                 <Pricing />
                 <Hosting />
                 <Testimonials />

@@ -6,6 +6,7 @@ const Industries: React.FC = () => {
     {
       icon: <Wrench className="w-6 h-6" />,
       name: "Plumbers",
+      link: "/plumber-web-design",
       desc: "Stop losing emergency jobs to competitors who answer first.",
       benefits: [
         "24/7 lead capture when pipes burst",
@@ -16,6 +17,7 @@ const Industries: React.FC = () => {
     {
       icon: <Zap className="w-6 h-6" />,
       name: "Electricians",
+      link: "/electrician-web-design",
       desc: "Customers want proof you're licensed and legit before calling.",
       benefits: [
         "Showcase licenses & certifications",
@@ -26,6 +28,7 @@ const Industries: React.FC = () => {
     {
       icon: <Sparkles className="w-6 h-6" />,
       name: "Nail Salons",
+      link: "/nail-salon-web-design",
       desc: "Wasted hours answering the same booking questions all day?",
       benefits: [
         "Online booking saves 10+ hours/week",
@@ -36,6 +39,7 @@ const Industries: React.FC = () => {
     {
       icon: <Paintbrush className="w-6 h-6" />,
       name: "Painters & Contractors",
+      link: "/painter-web-design",
       desc: "Your work speaks for itself - if people can actually see it.",
       benefits: [
         "Before/after galleries that sell jobs",
@@ -46,6 +50,7 @@ const Industries: React.FC = () => {
     {
       icon: <Hammer className="w-6 h-6" />,
       name: "Landscaping",
+      link: "/landscaping-web-design",
       desc: "Seasonal work means you need leads all year round.",
       benefits: [
         "Seasonal service promotions",
@@ -56,6 +61,7 @@ const Industries: React.FC = () => {
     {
       icon: <Droplets className="w-6 h-6" />,
       name: "Cleaning Services",
+      link: "/cleaning-web-design",
       desc: "Customers need quick quotes, not phone tag.",
       benefits: [
         "Service area coverage maps",
@@ -66,6 +72,7 @@ const Industries: React.FC = () => {
     {
       icon: <Wind className="w-6 h-6" />,
       name: "HVAC & Heating",
+      link: "/hvac-web-design",
       desc: "When the AC breaks, customers call whoever shows up first online.",
       benefits: [
         "Emergency contact features",
@@ -76,6 +83,7 @@ const Industries: React.FC = () => {
     {
       icon: <Stethoscope className="w-6 h-6" />,
       name: "Dental & Medical",
+      link: "/dental-web-design",
       desc: "Patients expect online booking and secure forms in 2026.",
       benefits: [
         "HIPAA-compliant patient forms",
@@ -126,7 +134,7 @@ const Industries: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
           {industries.map((item, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm hover:border-brand-lime hover:shadow-md transition-all">
+            <a key={idx} href={item.link} className="bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm hover:border-brand-lime hover:shadow-md transition-all cursor-pointer block">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-black bg-brand-lime rounded-lg p-2 flex-shrink-0">{item.icon}</span>
                 <h3 className="font-bold text-base text-brand-black">{item.name}</h3>
@@ -142,7 +150,7 @@ const Industries: React.FC = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
