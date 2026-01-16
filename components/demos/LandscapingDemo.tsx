@@ -1,17 +1,17 @@
 import React from 'react';
-import { Shovel, Trees, Scissors, Sun, Phone, CheckCircle2, Calendar, MapPin, ArrowRight, Star, Flower2 } from 'lucide-react';
+import { Shovel, Trees, Scissors, Sun, Phone, CheckCircle2, Calendar, MapPin, ArrowRight, Star, Flower2, Image as ImageIcon } from 'lucide-react';
 
 const LandscapingDemo: React.FC = () => {
     return (
         <div className="bg-white text-stone-800 font-sans selection:bg-green-200 relative">
 
             {/* Sticky Mobile Quote Bar */}
-            <div className="fixed bottom-0 left-0 w-full z-50 bg-green-700 text-white p-4 flex items-center justify-between md:hidden shadow-2xl">
+            <div className="fixed bottom-0 left-0 w-full z-50 bg-green-800 text-white p-4 flex items-center justify-between md:hidden shadow-2xl">
                 <div>
                     <div className="font-bold text-sm uppercase tracking-wider">Need a Mowing?</div>
                     <div className="text-xs opacity-90">Get a Free Estimate</div>
                 </div>
-                <a href="tel:+19177688896" className="bg-white text-green-700 px-6 py-2 rounded-full font-bold text-sm shadow-sm flex items-center gap-2">
+                <a href="tel:+19177688896" className="bg-white text-green-800 px-6 py-2 rounded-full font-bold text-sm shadow-sm flex items-center gap-2">
                     <Phone className="w-4 h-4 fill-current" /> Call Now
                 </a>
             </div>
@@ -23,6 +23,7 @@ const LandscapingDemo: React.FC = () => {
                         <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-green-500" /> Serving Greater Metro Area</span>
                         <span className="flex items-center gap-2 hidden sm:flex"><CheckCircle2 className="w-4 h-4 text-green-500" /> Fully Insured & Licensed</span>
                     </div>
+                    <div className="hidden sm:block text-green-500 font-bold uppercase tracking-wider text-xs">Spring Cleanup Scheduling Open</div>
                 </div>
             </div>
 
@@ -31,23 +32,23 @@ const LandscapingDemo: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="flex justify-between items-center h-24">
                         <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 bg-green-700 rounded-tl-2xl rounded-br-2xl flex items-center justify-center text-white shadow-lg">
+                            <div className="w-10 h-10 bg-green-800 rounded-tl-2xl rounded-br-2xl flex items-center justify-center text-white shadow-lg">
                                 <Trees className="w-6 h-6" />
                             </div>
                             <div className="leading-tight">
-                                <span className="block text-2xl font-serif font-black text-stone-900 tracking-tight">Green<span className="text-green-700">Genius</span></span>
+                                <span className="block text-2xl font-serif font-black text-stone-900 tracking-tight">Green<span className="text-green-800">Genius</span></span>
                                 <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-stone-400">Landscaping</span>
                             </div>
                         </div>
 
                         <div className="hidden lg:flex gap-10 font-bold text-sm uppercase tracking-wide text-stone-600">
-                            <a href="#" className="hover:text-green-700 transition-colors">Maintenance</a>
-                            <a href="#" className="hover:text-green-700 transition-colors">Design</a>
-                            <a href="#" className="hover:text-green-700 transition-colors">Hardscaping</a>
-                            <a href="#" className="hover:text-green-700 transition-colors">Projects</a>
+                            <a href="#" className="hover:text-green-800 transition-colors">Services</a>
+                            <a href="#" className="hover:text-green-800 transition-colors">Gallery</a>
+                            <a href="#" className="hover:text-green-800 transition-colors">About</a>
+                            <a href="#" className="hover:text-green-800 transition-colors">Contact</a>
                         </div>
 
-                        <a href="tel:+19177688896" className="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-green-700/30 transition-all flex items-center gap-2">
+                        <a href="tel:+19177688896" className="bg-green-800 hover:bg-green-900 text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-green-900/20 transition-all flex items-center gap-2">
                             <Calendar className="w-4 h-4" /> Free Estimate
                         </a>
                     </div>
@@ -62,14 +63,14 @@ const LandscapingDemo: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="space-y-8">
-                            <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider text-green-700 shadow-sm border border-green-100">
+                            <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider text-green-800 shadow-sm border border-green-100">
                                 <Flower2 className="w-4 h-4" />
                                 Now Booking Spring Cleanups
                             </div>
 
                             <h1 className="text-5xl lg:text-7xl font-serif text-stone-900 leading-[1.1]">
                                 Your Dream Yard, <br />
-                                <span className="text-green-700">Minus The Work.</span>
+                                <span className="text-green-800">Minus The Work.</span>
                             </h1>
 
                             <p className="text-xl text-stone-600 leading-relaxed max-w-lg font-light">
@@ -81,36 +82,36 @@ const LandscapingDemo: React.FC = () => {
                                     Get Pricing
                                     <ArrowRight className="w-5 h-5" />
                                 </button>
-                                <button className="bg-white border-2 border-stone-200 text-stone-700 text-lg font-bold py-5 px-8 rounded-xl hover:border-green-700 hover:text-green-700 transition-colors flex items-center justify-center gap-3">
+                                <button className="bg-white border-2 border-stone-200 text-stone-700 text-lg font-bold py-5 px-8 rounded-xl hover:border-green-800 hover:text-green-800 transition-colors flex items-center justify-center gap-3">
                                     View Gallery
                                 </button>
                             </div>
                         </div>
 
-                        {/* Image Grid Mockup */}
+                        {/* Image Grid Mockup - using gradients + icons to ensure NO BROKEN IMAGES */}
                         <div className="relative grid grid-cols-2 gap-4">
                             <div className="space-y-4 pt-12">
-                                <div className="aspect-[4/5] bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
-                                    <img src="https://images.unsplash.com/photo-1558904541-acf5239e23db?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lawn Maintenance" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                                    <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Maintenance</div>
+                                <div className="aspect-[4/5] bg-gradient-to-br from-green-100 to-green-200 rounded-2xl overflow-hidden shadow-lg relative group flex items-center justify-center">
+                                    <Trees className="w-16 h-16 text-green-800 opacity-20" />
+                                    <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider text-green-900">Maintenance</div>
                                 </div>
-                                <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
-                                    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Patio" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                <div className="aspect-square bg-gradient-to-br from-stone-200 to-stone-300 rounded-2xl overflow-hidden shadow-lg relative group flex items-center justify-center">
+                                    <MapPin className="w-12 h-12 text-stone-500 opacity-20" />
                                 </div>
                             </div>
                             <div className="space-y-4">
-                                <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
-                                    <img src="https://images.unsplash.com/photo-1599692994038-17a4c7f0db4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Garden" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                <div className="aspect-square bg-gradient-to-br from-stone-200 to-stone-300 rounded-2xl overflow-hidden shadow-lg relative group flex items-center justify-center">
+                                    <Sun className="w-12 h-12 text-stone-500 opacity-20" />
                                 </div>
-                                <div className="aspect-[4/5] bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
-                                    <img src="https://images.unsplash.com/photo-1584464591321-7227eb0dc246?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Design" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                                    <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Design</div>
+                                <div className="aspect-[4/5] bg-gradient-to-br from-stone-800 to-stone-900 rounded-2xl overflow-hidden shadow-lg relative group flex items-center justify-center">
+                                    <Shovel className="w-16 h-16 text-stone-600 opacity-40" />
+                                    <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider text-stone-900">Design</div>
                                 </div>
                             </div>
                             {/* Floating Badge */}
-                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-full shadow-xl flex items-center justify-center">
-                                <div className="w-16 h-16 rounded-full border-2 border-green-700 flex flex-col items-center justify-center text-center">
-                                    <span className="text-xl font-bold text-green-700 leading-none">15+</span>
+                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-full shadow-xl flex items-center justify-center z-10">
+                                <div className="w-16 h-16 rounded-full border-2 border-green-800 flex flex-col items-center justify-center text-center">
+                                    <span className="text-xl font-bold text-green-800 leading-none">15+</span>
                                     <span className="text-[9px] uppercase font-bold text-stone-500">Years</span>
                                 </div>
                             </div>
@@ -124,34 +125,34 @@ const LandscapingDemo: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="flex justify-between items-end mb-16">
                         <h2 className="text-4xl font-serif text-stone-900">Our Services</h2>
-                        <a href="#" className="font-bold text-green-700 hover:text-green-800 border-b border-green-700 pb-1">View Full Service Menu</a>
+                        <a href="#" className="font-bold text-green-800 hover:text-green-900 border-b border-green-800 pb-1">View Full Service Menu</a>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div className="p-8 bg-stone-50 rounded-2xl hover:bg-green-50 transition-colors group cursor-pointer">
-                            <Scissors className="w-10 h-10 text-stone-400 group-hover:text-green-700 mb-6 transition-colors" />
+                        <div className="p-8 bg-stone-50 rounded-2xl hover:bg-green-50 transition-colors group cursor-pointer border border-stone-100">
+                            <Scissors className="w-10 h-10 text-stone-400 group-hover:text-green-800 mb-6 transition-colors" />
                             <h3 className="text-xl font-bold mb-3 font-serif">Weekly Maintenance</h3>
                             <p className="text-stone-500 mb-6">Mowing, edging, and blowing. We show up on the same day every week, rain or shine.</p>
-                            <span className="text-xs font-bold uppercase tracking-wider text-green-700">From $45/week</span>
+                            <span className="text-xs font-bold uppercase tracking-wider text-green-800">From $45/week</span>
                         </div>
-                        <div className="p-8 bg-stone-50 rounded-2xl hover:bg-green-50 transition-colors group cursor-pointer">
-                            <Trees className="w-10 h-10 text-stone-400 group-hover:text-green-700 mb-6 transition-colors" />
+                        <div className="p-8 bg-stone-50 rounded-2xl hover:bg-green-50 transition-colors group cursor-pointer border border-stone-100">
+                            <Trees className="w-10 h-10 text-stone-400 group-hover:text-green-800 mb-6 transition-colors" />
                             <h3 className="text-xl font-bold mb-3 font-serif">Design & Build</h3>
                             <p className="text-stone-500 mb-6">Patios, walkways, and retaining walls. Increase your property value with hardscaping.</p>
-                            <span className="text-xs font-bold uppercase tracking-wider text-green-700">Free 3D Design</span>
+                            <span className="text-xs font-bold uppercase tracking-wider text-green-800">Free 3D Design</span>
                         </div>
-                        <div className="p-8 bg-stone-50 rounded-2xl hover:bg-green-50 transition-colors group cursor-pointer">
-                            <Sun className="w-10 h-10 text-stone-400 group-hover:text-green-700 mb-6 transition-colors" />
+                        <div className="p-8 bg-stone-50 rounded-2xl hover:bg-green-50 transition-colors group cursor-pointer border border-stone-100">
+                            <Sun className="w-10 h-10 text-stone-400 group-hover:text-green-800 mb-6 transition-colors" />
                             <h3 className="text-xl font-bold mb-3 font-serif">Seasonal Cleanups</h3>
                             <p className="text-stone-500 mb-6">Spring mulch and fall leaf removal. Get your yard ready for the changing seasons.</p>
-                            <span className="text-xs font-bold uppercase tracking-wider text-green-700">Book Early & Save</span>
+                            <span className="text-xs font-bold uppercase tracking-wider text-green-800">Book Early & Save</span>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Review Strip */}
-            <section className="bg-green-800 text-white py-20">
+            <section className="bg-green-900 text-white py-20">
                 <div className="max-w-7xl mx-auto px-6 text-center">
                     <div className="flex justify-center gap-1 mb-6 text-yellow-400">
                         {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-6 h-6 fill-current" />)}
