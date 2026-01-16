@@ -75,8 +75,8 @@ const HVACDemo: React.FC = () => {
                                 High Volume Call Times - Priority Dispatch Active
                             </div>
                             <h1 className="text-5xl lg:text-7xl font-black text-slate-900 leading-[1.05] tracking-tight">
-                                Too Hot? <span className="text-orange-500">Too Cold?</span><br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">Just Right.</span>
+                                <span className="text-red-500">Too Hot?</span> <span className="text-blue-500">Too Cold?</span><br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-emerald-600">Just Right.</span>
                             </h1>
                             <p className="text-xl text-slate-600 leading-relaxed max-w-lg font-medium">
                                 We restore comfort to your home same-day. No overtime fees for nights for club members. 10-year warranty on new installs.
