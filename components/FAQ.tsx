@@ -43,7 +43,7 @@ We work fast without cutting corners on quality.`
     },
     {
       q: "What if I need changes after the website is launched?",
-      a: "If you're on the Care plan ($99/mo) or higher, small edits are included — just email us. On the Essentials plan, we charge per request (usually $25-50 for quick changes). We can also train you to make simple edits yourself."
+      a: "If you're on the Care plan ($99/mo) or higher, unlimited small edits are included — just email us. On the Essentials plan, we charge a small fee per request. We encourage the Care plan so you never have to worry about hourly bills."
     },
     {
       q: "Do I own my website?",
