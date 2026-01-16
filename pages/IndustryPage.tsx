@@ -23,8 +23,8 @@ const INDUSTRIES: Record<string, IndustryData> = {
         title: "Plumber Web Design",
         metaTitle: "Web Design for Plumbers | Get More Emergency Calls",
         metaDesc: "Stop losing emergency jobs to competitors. We build sites with 24/7 lead capture and service area maps. Call (917) 768-8896.",
-        heroHeadline: "Stop Losing Emergency Jobs To Competitors Who Answer First.",
-        heroSubheadline: "When pipes burst, customers call the first number they see. We build websites that capture those calls instantly.",
+        heroHeadline: "Web Design for Plumbers: Stop Losing Emergency Jobs To Competitors.",
+        heroSubheadline: "When pipes burst, customers call the first number they see. We build websites optimized for speed and 24/7 lead capture.",
         painPoints: [
             "Missed emergency calls?",
             "Losing jobs to 'big box' competitors?",
@@ -83,7 +83,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
         title: "Painter & Contractor Web Design",
         metaTitle: "Web Design for Painters | Before & After Galleries",
         metaDesc: "Your work speaks for itself. Show it off with high-resolution before/after galleries and instant quote forms.",
-        heroHeadline: "Your Work Speaks For Itself - If People Can Actually See It.",
+        heroHeadline: "Web Design for Painters: Turn Lookers Into Buyers With Stunning Galleries.",
         heroSubheadline: "Homeowners buy with their eyes. We build galleries that turn 'maybe' into 'when can you start?'",
         painPoints: [
             "Hard to visualize your quality?",
@@ -103,7 +103,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
         title: "Landscaping Web Design",
         metaTitle: "Web Design for Landscapers | Get Leads All Year Round",
         metaDesc: "Seasonal work needs year-round leads. We build sites that sell spring cleanups, summer mowing, and fall design.",
-        heroHeadline: "Seasonal Work Means You Need Leads All Year Round.",
+        heroHeadline: "Web Design for Landscapers: Get Leads Even In The Off-Season.",
         heroSubheadline: "From spring cleanups to hardscaping projects, keep your crew busy in every season.",
         painPoints: [
             "Dead winters killing cashflow?",
@@ -143,7 +143,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
         title: "HVAC Web Design",
         metaTitle: "Web Design for HVAC | 24/7 Emergency Service Sites",
         metaDesc: "When the AC breaks, speed wins. We build fast-loading sites with emergency contact priority for HVAC pros.",
-        heroHeadline: "When The AC Breaks, Customers Call Whoever Shows Up First Online.",
+        heroHeadline: "Web Design for HVAC: Be The First Call When The AC Breaks.",
         heroSubheadline: "Your website needs to be the digital equivalent of a frantic 911 call. Fast, clear, and ready to dispatch.",
         painPoints: [
             "Losing installs to big brands?",

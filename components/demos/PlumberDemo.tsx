@@ -11,7 +11,7 @@ const PlumberDemo: React.FC = () => {
                     <div className="font-bold text-sm uppercase tracking-wider">Emergency?</div>
                     <div className="text-xs opacity-90">We arrive in 60 mins</div>
                 </div>
-                <a href="#" className="bg-white text-red-600 px-6 py-2 rounded-full font-bold text-sm shadow-sm flex items-center gap-2">
+                <a href="tel:+19177688896" className="bg-white text-red-600 px-6 py-2 rounded-full font-bold text-sm shadow-sm flex items-center gap-2">
                     <Phone className="w-4 h-4 fill-current" /> Call Now
                 </a>
             </div>
@@ -55,7 +55,7 @@ const PlumberDemo: React.FC = () => {
                         <div className="flex items-center gap-4">
                             <div className="hidden md:block text-right">
                                 <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider">24/7 Dispatch</span>
-                                <span className="block text-xl font-black text-slate-900 tracking-tight">(555) 392-0192</span>
+                                <span className="block text-xl font-black text-slate-900 tracking-tight">(917) 768-8896</span>
                             </div>
                             <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold shadow-xl shadow-blue-600/30 transition-all transform hover:-translate-y-0.5 hidden md:block">
                                 Book Now

@@ -166,8 +166,8 @@ const ConstructOneDemo: React.FC<Props> = ({ onClose }) => {
                         </div>
 
                         <div className="flex items-center gap-6">
-                            <a href="tel:+18005550199" className="hidden md:flex items-center gap-2 text-sm font-bold hover:text-orange-500 transition-colors">
-                                <Phone className="w-4 h-4 text-orange-500" /> 1-800-555-0199
+                            <a href="tel:+19177688896" className="hidden md:flex items-center gap-2 text-sm font-bold hover:text-orange-500 transition-colors">
+                                <Phone className="w-4 h-4 text-orange-500" /> (917) 768-8896
                             </a>
                             <button
                                 onClick={(e) => handleLink(e, 'modal', 'contact')}
@@ -481,7 +481,7 @@ const ConstructOneDemo: React.FC<Props> = ({ onClose }) => {
                             <h4 className="text-white font-bold uppercase tracking-widest mb-6">Headquarters</h4>
                             <p className="mb-2 text-white">100 Industrial Parkway</p>
                             <p className="mb-6">Chicago, IL 60601</p>
-                            <p className="flex items-center gap-2 mb-2"><Phone className="w-4 h-4 text-orange-500" /> (312) 555-0199</p>
+                            <p className="flex items-center gap-2 mb-2"><Phone className="w-4 h-4 text-orange-500" /> (917) 768-8896</p>
                             <p className="flex items-center gap-2"><Mail className="w-4 h-4 text-orange-500" /> info@constructone.demo</p>
                         </div>
                     </div>

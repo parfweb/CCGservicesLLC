@@ -20,7 +20,11 @@ const CleaningDemo: React.FC = () => {
                         <span className="flex items-center gap-2"><Shield className="w-4 h-4" /> 100% Satisfaction Guarantee</span>
                         <span className="flex items-center gap-2"><UserCheck className="w-4 h-4" /> Background Checked Staff</span>
                     </div>
-                    <div className="font-bold">✨ Get $20 Off Your First Clean! Code: FRESH20</div>
+                    <div className="font-bold flex items-center gap-4">
+                        <span>✨ Get $20 Off Your First Clean! Code: FRESH20</span>
+                        <span className="text-emerald-100 opacity-50">|</span>
+                        <span>Call Us: (917) 768-8896</span>
+                    </div>
                 </div>
             </div>
 
