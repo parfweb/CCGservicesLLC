@@ -86,12 +86,12 @@ const LandscapingDemo: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* IMAGE GRID - Using Lorem Picsum (reliable placeholder service) */}
+                        {/* IMAGE GRID - Using Pexels direct URLs */}
                         <div className="relative grid grid-cols-2 gap-4">
                             <div className="space-y-4 pt-12">
                                 <div className="aspect-[4/5] bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
                                     <img
-                                        src="https://picsum.photos/seed/lawn/400/500"
+                                        src="https://images.pexels.com/photos/1643389/pexels-photo-1643389.jpeg?auto=compress&cs=tinysrgb&w=800"
                                         alt="Lawn Maintenance"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
@@ -99,7 +99,7 @@ const LandscapingDemo: React.FC = () => {
                                 </div>
                                 <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
                                     <img
-                                        src="https://picsum.photos/seed/patio/400/400"
+                                        src="https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=800"
                                         alt="Patio Design"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
@@ -108,14 +108,14 @@ const LandscapingDemo: React.FC = () => {
                             <div className="space-y-4">
                                 <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
                                     <img
-                                        src="https://picsum.photos/seed/garden/400/400"
+                                        src="https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=800"
                                         alt="Garden Care"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                 </div>
                                 <div className="aspect-[4/5] bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
                                     <img
-                                        src="https://picsum.photos/seed/backyard/400/500"
+                                        src="https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=800"
                                         alt="Full Design"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
