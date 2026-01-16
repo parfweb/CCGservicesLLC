@@ -91,21 +91,37 @@ const LandscapingDemo: React.FC = () => {
                         {/* Image Grid Mockup - using gradients + icons to ensure NO BROKEN IMAGES */}
                         <div className="relative grid grid-cols-2 gap-4">
                             <div className="space-y-4 pt-12">
-                                <div className="aspect-[4/5] bg-gradient-to-br from-green-100 to-green-200 rounded-2xl overflow-hidden shadow-lg relative group flex items-center justify-center">
-                                    <Trees className="w-16 h-16 text-green-800 opacity-20" />
+                                <div className="aspect-[4/5] bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1558904541-acf5239e23db?auto=format&fit=crop&w=800&q=80"
+                                        alt="Lawn Maintenance"
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    />
                                     <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider text-green-900">Maintenance</div>
                                 </div>
-                                <div className="aspect-square bg-gradient-to-br from-stone-200 to-stone-300 rounded-2xl overflow-hidden shadow-lg relative group flex items-center justify-center">
-                                    <MapPin className="w-12 h-12 text-stone-500 opacity-20" />
+                                <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=80"
+                                        alt="Patio"
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    />
                                 </div>
                             </div>
                             <div className="space-y-4">
-                                <div className="aspect-square bg-gradient-to-br from-stone-200 to-stone-300 rounded-2xl overflow-hidden shadow-lg relative group flex items-center justify-center">
-                                    <Sun className="w-12 h-12 text-stone-500 opacity-20" />
+                                <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1598902168898-90f7a93b4823?auto=format&fit=crop&w=800&q=80"
+                                        alt="Garden"
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    />
                                 </div>
-                                <div className="aspect-[4/5] bg-gradient-to-br from-stone-800 to-stone-900 rounded-2xl overflow-hidden shadow-lg relative group flex items-center justify-center">
-                                    <Shovel className="w-16 h-16 text-stone-600 opacity-40" />
-                                    <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider text-stone-900">Design</div>
+                                <div className="aspect-[4/5] bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1584464591321-7227eb0dc246?auto=format&fit=crop&w=800&q=80"
+                                        alt="Design"
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    />
+                                    <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider text-green-900">Design</div>
                                 </div>
                             </div>
                             {/* Floating Badge */}
