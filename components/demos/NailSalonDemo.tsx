@@ -127,10 +127,10 @@ const NailSalonDemo: React.FC = () => {
                             <div key={i} className="aspect-square bg-zinc-200 rounded-xl overflow-hidden group relative">
                                 <img
                                     src={[
-                                        "https://images.unsplash.com/photo-1632345033839-245a999bb83d?auto=format&fit=crop&q=80&w=400",
-                                        "https://images.unsplash.com/photo-1604654894610-df490982570d?auto=format&fit=crop&q=80&w=400",
-                                        "https://images.unsplash.com/photo-1634712282287-14ed57b9cc89?auto=format&fit=crop&q=80&w=400",
-                                        "https://images.unsplash.com/photo-1607613009820-a29f7bb81304?auto=format&fit=crop&q=80&w=400"
+                                        "https://images.pexels.com/photos/704815/pexels-photo-704815.jpeg?auto=compress&cs=tinysrgb&w=400",
+                                        "https://images.pexels.com/photos/939836/pexels-photo-939836.jpeg?auto=compress&cs=tinysrgb&w=400",
+                                        "https://images.pexels.com/photos/3997391/pexels-photo-3997391.jpeg?auto=compress&cs=tinysrgb&w=400",
+                                        "https://images.pexels.com/photos/3997388/pexels-photo-3997388.jpeg?auto=compress&cs=tinysrgb&w=400"
                                     ][i - 1]}
                                     alt="Nail Art Portfolio"
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
