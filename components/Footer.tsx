@@ -115,6 +115,8 @@ const Footer: React.FC = () => {
                 <li><a href="/landscaping-web-design" onClick={(e) => handleNavigation(e, '/landscaping-web-design')} className="text-zinc-400 hover:text-white transition-colors">Landscaping</a></li>
                 <li><a href="/nail-salon-web-design" onClick={(e) => handleNavigation(e, '/nail-salon-web-design')} className="text-zinc-400 hover:text-white transition-colors">Nail Salons</a></li>
                 <li><a href="/painter-web-design" onClick={(e) => handleNavigation(e, '/painter-web-design')} className="text-zinc-400 hover:text-white transition-colors">Painters</a></li>
+                <li><a href="/cleaning-web-design" onClick={(e) => handleNavigation(e, '/cleaning-web-design')} className="text-zinc-400 hover:text-white transition-colors">Cleaning Services</a></li>
+                <li><a href="/dental-web-design" onClick={(e) => handleNavigation(e, '/dental-web-design')} className="text-zinc-400 hover:text-white transition-colors">Dental & Medical</a></li>
               </ul>
             </div>
 
