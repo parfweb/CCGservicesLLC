@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, TrendingUp, Check, HelpCircle, AlertTriangle } from 'lucide-react';
+import { Server, Wrench, TrendingUp, Check, X, HelpCircle, AlertTriangle } from 'lucide-react';
 
 const Hosting: React.FC = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -18,167 +18,233 @@ const Hosting: React.FC = () => {
 
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-5xl mx-auto px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
 
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-5xl font-bold text-brand-black mb-4">After Your Website is Built</h2>
-          <p className="text-zinc-500 text-lg max-w-2xl mx-auto">Your website needs a home and someone to take care of it. Here's what that means in plain English.</p>
+          <h2 className="text-3xl md:text-5xl font-bold text-brand-black mb-4">Monthly Website Care</h2>
+          <p className="text-zinc-500 text-lg max-w-2xl mx-auto">Your website needs a home and ongoing care. Pick the level of support you need.</p>
         </div>
 
         {/* Simple Explanation */}
-        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 mb-12 flex items-start gap-4">
-          <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-10 flex items-start gap-4 max-w-3xl mx-auto">
+          <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
           <div>
-            <p className="font-bold text-amber-800 mb-1">Why do I need to pay monthly?</p>
-            <p className="text-amber-700 text-sm">
-              Your website lives on a computer (server) that costs money to run. It also needs security updates, backups, and someone to fix things if they break.
-              <strong> Think of it like rent + insurance for your website.</strong>
+            <p className="text-amber-800 text-sm">
+              <strong>Why monthly?</strong> Your website lives on a server that costs money. It needs security updates and backups.
+              Think of it like <strong>rent + insurance</strong> for your website.
             </p>
           </div>
         </div>
 
-        {/* Two Simple Options */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        {/* Three Tiers */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
 
-          {/* Hosting Only */}
-          <div className="bg-white p-8 rounded-3xl border-2 border-zinc-200 shadow-sm flex flex-col">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-zinc-100 rounded-xl flex items-center justify-center text-zinc-600">
-                <ShieldCheck className="w-6 h-6" />
+          {/* Tier 1: Basic Hosting */}
+          <div className="bg-white p-6 rounded-2xl border border-zinc-200 flex flex-col">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-10 h-10 bg-zinc-100 rounded-lg flex items-center justify-center text-zinc-600">
+                <Server className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-brand-black">Keep It Running</h3>
-                <p className="text-xs text-zinc-400">Hosting & Maintenance</p>
+                <h3 className="font-bold text-brand-black">Essentials</h3>
+                <p className="text-xs text-zinc-400">Keep It Online</p>
               </div>
             </div>
 
-            {/* Who needs this */}
-            <div className="bg-zinc-50 rounded-xl p-4 mb-6">
-              <p className="text-sm text-zinc-700">
-                <strong>Every website needs this.</strong> It's like paying rent — without it, your website goes offline.
-              </p>
+            <div className="mb-4">
+              <div className="text-3xl font-bold text-brand-black">$49<span className="text-sm font-normal text-zinc-400">/mo</span></div>
             </div>
 
-            <div className="mb-6">
-              <div className="text-4xl font-bold text-brand-black">$49<span className="text-lg font-normal text-zinc-400">/month</span></div>
-            </div>
+            <p className="text-xs text-zinc-500 mb-4 pb-4 border-b border-zinc-100">
+              <strong>Best for:</strong> "I just need my website to stay online. I'll contact you if I need changes."
+            </p>
 
-            {/* What's included - plain language */}
-            <div className="mb-6">
-              <p className="text-xs font-bold text-zinc-500 uppercase tracking-wide mb-3">What This Pays For:</p>
-              <ul className="space-y-3 flex-1">
-                <li className="flex items-start gap-3 text-zinc-700 text-sm">
-                  <Check className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                  <span><strong>Website stays online</strong> — fast, secure hosting</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-700 text-sm">
-                  <Check className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                  <span><strong>Daily backups</strong> — if something breaks, we restore it</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-700 text-sm">
-                  <Check className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                  <span><strong>Security updates</strong> — protection from hackers</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-700 text-sm">
-                  <Check className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                  <span><strong>We fix problems</strong> — something breaks? We handle it</span>
-                </li>
-              </ul>
-            </div>
+            <ul className="space-y-2 mb-6 flex-1 text-sm">
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                <span>Fast, secure hosting</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                <span>Daily backups</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                <span>Security monitoring</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                <span>SSL certificate (https)</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-400">
+                <X className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Content edits (pay per request)</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-400">
+                <X className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>SEO work</span>
+              </li>
+            </ul>
 
-            {/* Simple bottom line */}
-            <div className="bg-green-50 rounded-xl p-4 border border-green-100">
-              <p className="text-sm text-green-800">
-                ✓ <strong>Bottom line:</strong> Your website works, stays safe, and doesn't disappear.
-              </p>
-            </div>
+            <a
+              href="#contact"
+              onClick={(e) => handleScroll(e, '#contact')}
+              className="block text-center w-full py-2.5 border border-zinc-200 text-brand-black font-bold rounded-lg hover:bg-zinc-50 transition-colors text-sm"
+            >
+              Choose Essentials
+            </a>
           </div>
 
-          {/* Hosting + Growth */}
-          <div className="bg-white p-8 rounded-3xl border-2 border-brand-black shadow-xl flex flex-col relative overflow-hidden">
-            <div className="absolute top-0 right-0 bg-brand-lime px-4 py-1.5 text-xs font-bold uppercase border-b border-l border-brand-black rounded-bl-xl">Most Choose This</div>
+          {/* Tier 2: Care */}
+          <div className="bg-white p-6 rounded-2xl border-2 border-brand-black shadow-lg flex flex-col relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-brand-lime px-3 py-1 text-[10px] font-bold uppercase border-b border-l border-brand-black rounded-bl-lg">Most Popular</div>
 
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-brand-lime rounded-xl flex items-center justify-center text-black">
-                <TrendingUp className="w-6 h-6" />
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-10 h-10 bg-brand-lime rounded-lg flex items-center justify-center text-black">
+                <Wrench className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-brand-black">Keep It Growing</h3>
-                <p className="text-xs text-zinc-400">Hosting + Get More Customers</p>
+                <h3 className="font-bold text-brand-black">Care</h3>
+                <p className="text-xs text-zinc-400">We Handle Everything</p>
               </div>
             </div>
 
-            {/* Who needs this */}
-            <div className="bg-brand-lime/20 rounded-xl p-4 mb-6 border border-brand-lime/30">
-              <p className="text-sm text-zinc-700">
-                <strong>For businesses that want more calls.</strong> We actively work to get you found on Google.
-              </p>
+            <div className="mb-4">
+              <div className="text-3xl font-bold text-brand-black">$99<span className="text-sm font-normal text-zinc-400">/mo</span></div>
             </div>
 
-            <div className="mb-6">
-              <div className="text-4xl font-bold text-brand-black">$149<span className="text-lg font-normal text-zinc-400">/month</span></div>
+            <p className="text-xs text-zinc-500 mb-4 pb-4 border-b border-zinc-100">
+              <strong>Best for:</strong> "I don't want to think about my website. Just keep it running and update things when I ask."
+            </p>
+
+            <ul className="space-y-2 mb-6 flex-1 text-sm">
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span><strong>Everything in Essentials</strong></span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Unlimited small edits (text, photos)</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Priority support (same day response)</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span>Monthly performance check</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-400">
+                <X className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Blog posts</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-400">
+                <X className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Active SEO work</span>
+              </li>
+            </ul>
+
+            <a
+              href="#contact"
+              onClick={(e) => handleScroll(e, '#contact')}
+              className="block text-center w-full py-2.5 btn-primary font-bold rounded-lg text-sm"
+            >
+              Choose Care
+            </a>
+          </div>
+
+          {/* Tier 3: Growth */}
+          <div className="bg-white p-6 rounded-2xl border border-zinc-200 flex flex-col">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
+                <TrendingUp className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="font-bold text-brand-black">Growth</h3>
+                <p className="text-xs text-zinc-400">Get More Customers</p>
+              </div>
             </div>
 
-            {/* What's included - plain language */}
-            <div className="mb-6">
-              <p className="text-xs font-bold text-zinc-500 uppercase tracking-wide mb-3">Everything in "Keep It Running" Plus:</p>
-              <ul className="space-y-3 flex-1">
-                <li className="flex items-start gap-3 text-zinc-700 text-sm">
-                  <Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span><strong>Google optimization</strong> — we improve your rankings</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-700 text-sm">
-                  <Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span><strong>Content updates</strong> — need text or photos changed? Done.</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-700 text-sm">
-                  <Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span><strong>Monthly report</strong> — see how many people visit your site</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-700 text-sm">
-                  <Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span><strong>Priority support</strong> — we respond within hours, not days</span>
-                </li>
-              </ul>
+            <div className="mb-4">
+              <div className="text-3xl font-bold text-brand-black">$249<span className="text-sm font-normal text-zinc-400">/mo</span></div>
             </div>
 
-            {/* Simple bottom line */}
-            <div className="bg-green-50 rounded-xl p-4 border border-green-100">
-              <p className="text-sm text-green-800">
-                ✓ <strong>Bottom line:</strong> Website works + we actively help you get more customers.
-              </p>
-            </div>
+            <p className="text-xs text-zinc-500 mb-4 pb-4 border-b border-zinc-100">
+              <strong>Best for:</strong> "I want my website to actively bring in new customers. Help me rank on Google."
+            </p>
+
+            <ul className="space-y-2 mb-6 flex-1 text-sm">
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                <span><strong>Everything in Care</strong></span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                <span><strong>2 blog posts/month</strong> (we write them)</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                <span>Google ranking optimization</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                <span>Google Business Profile updates</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                <span>Monthly traffic report</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                <span>Competitor monitoring</span>
+              </li>
+            </ul>
+
+            <a
+              href="#contact"
+              onClick={(e) => handleScroll(e, '#contact')}
+              className="block text-center w-full py-2.5 border border-zinc-200 text-brand-black font-bold rounded-lg hover:bg-zinc-50 transition-colors text-sm"
+            >
+              Choose Growth
+            </a>
           </div>
         </div>
 
-        {/* FAQ / Common Questions */}
-        <div className="bg-zinc-50 rounded-2xl p-8 border border-zinc-200">
-          <div className="flex items-center gap-3 mb-6">
-            <HelpCircle className="w-6 h-6 text-zinc-500" />
-            <h3 className="text-lg font-bold text-brand-black">Common Questions</h3>
+        {/* Need more? */}
+        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10 text-center">
+          <p className="text-blue-800 font-bold mb-2">Need more blog posts or aggressive SEO?</p>
+          <p className="text-blue-700 text-sm mb-4">
+            We offer custom plans starting at <strong>$399/mo</strong> with 4+ blog posts, backlink building, and dedicated SEO strategy.
+          </p>
+          <a href="#contact" onClick={(e) => handleScroll(e, '#contact')} className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-blue-700 transition-colors">
+            Get Custom Quote
+          </a>
+        </div>
+
+        {/* FAQ */}
+        <div className="bg-zinc-50 rounded-2xl p-6 border border-zinc-200">
+          <div className="flex items-center gap-3 mb-5">
+            <HelpCircle className="w-5 h-5 text-zinc-500" />
+            <h3 className="font-bold text-brand-black">Quick Answers</h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
             <div>
-              <p className="font-bold text-zinc-800 mb-1">"Do I have to pay this?"</p>
-              <p className="text-sm text-zinc-600">Yes, if you want your website to stay online. It's like phone service — no payment, no service.</p>
+              <p className="font-bold text-zinc-800 mb-1">"Do I have to pick one?"</p>
+              <p className="text-zinc-600">Yes. Everyone needs at least Essentials ($49) for hosting. The rest is up to you.</p>
             </div>
             <div>
-              <p className="font-bold text-zinc-800 mb-1">"What if I stop paying?"</p>
-              <p className="text-sm text-zinc-600">Your website goes offline. But we'll always warn you first and help you transfer if needed.</p>
+              <p className="font-bold text-zinc-800 mb-1">"What counts as a 'small edit'?"</p>
+              <p className="text-zinc-600">Text changes, swapping photos, updating hours/prices. Not redesigning pages.</p>
             </div>
             <div>
-              <p className="font-bold text-zinc-800 mb-1">"Can I switch plans later?"</p>
-              <p className="text-sm text-zinc-600">Yes! Start with $49 and upgrade anytime. We'll even give you credit for what you've paid.</p>
+              <p className="font-bold text-zinc-800 mb-1">"Can I upgrade later?"</p>
+              <p className="text-zinc-600">Absolutely. Start with $49 or $99 and upgrade when you're ready to grow.</p>
             </div>
             <div>
-              <p className="font-bold text-zinc-800 mb-1">"Is there a contract?"</p>
-              <p className="text-sm text-zinc-600">No long contracts. Pay monthly. Cancel anytime with 30 days notice.</p>
+              <p className="font-bold text-zinc-800 mb-1">"Any contracts?"</p>
+              <p className="text-zinc-600">No long-term contracts. Month-to-month. Cancel anytime with 30 days notice.</p>
             </div>
-          </div>
-
-          <div className="mt-6 pt-6 border-t border-zinc-200 text-center">
-            <p className="text-zinc-500 text-sm">Still confused? <a href="#contact" onClick={(e) => handleScroll(e, '#contact')} className="text-brand-black font-bold underline">Let's talk — we'll explain everything.</a></p>
           </div>
         </div>
 
