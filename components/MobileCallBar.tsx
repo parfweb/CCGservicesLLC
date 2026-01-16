@@ -7,7 +7,7 @@ const MobileCallBar: React.FC = () => {
             <div className="flex">
                 {/* Call Button */}
                 <a
-                    href="tel:+15551234567"
+                    href="tel:9177688896"
                     className="flex-1 flex items-center justify-center gap-2 py-4 text-white font-bold hover:bg-zinc-800 transition-colors"
                 >
                     <Phone className="w-5 h-5" />
