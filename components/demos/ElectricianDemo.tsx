@@ -7,6 +7,17 @@ const ElectricianDemo: React.FC = () => {
     return (
         <div className="bg-neutral-900 text-white font-sans selection:bg-yellow-500 selection:text-black">
 
+            {/* Sticky Mobile Emergency Bar */}
+            <div className="fixed bottom-0 left-0 w-full z-50 bg-red-600 text-white p-4 flex items-center justify-between md:hidden shadow-2xl">
+                <div>
+                    <div className="font-bold text-sm uppercase tracking-wider">Power Outage?</div>
+                    <div className="text-xs opacity-90">24/7 Emergency Response</div>
+                </div>
+                <a href="tel:+19177688896" className="bg-white text-red-600 px-6 py-2 rounded-full font-bold text-sm shadow-sm flex items-center gap-2">
+                    <Phone className="w-4 h-4 fill-current" /> Call Now
+                </a>
+            </div>
+
             {/* Top Bar - Trust & Safety */}
             <div className="bg-yellow-500 text-black py-2 px-4 text-xs md:text-sm font-bold tracking-wide">
                 <div className="max-w-7xl mx-auto flex justify-between items-center">
