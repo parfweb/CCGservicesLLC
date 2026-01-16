@@ -125,12 +125,18 @@ const NailSalonDemo: React.FC = () => {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {[1, 2, 3, 4].map((i) => (
                             <div key={i} className="aspect-square bg-zinc-200 rounded-xl overflow-hidden group relative">
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all z-10 flex items-center justify-center">
-                                    <Heart className="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 w-8 h-8 fill-current" />
-                                </div>
-                                {/* Placeholder for actual nail art images */}
-                                <div className="w-full h-full bg-gradient-to-br from-zinc-100 to-zinc-200 flex items-center justify-center text-zinc-300">
-                                    <Camera className="w-8 h-8" />
+                                <img
+                                    src={[
+                                        "https://images.unsplash.com/photo-1632345033839-245a999bb83d?auto=format&fit=crop&q=80&w=400",
+                                        "https://images.unsplash.com/photo-1604654894610-df490982570d?auto=format&fit=crop&q=80&w=400",
+                                        "https://images.unsplash.com/photo-1634712282287-14ed57b9cc89?auto=format&fit=crop&q=80&w=400",
+                                        "https://images.unsplash.com/photo-1607613009820-a29f7bb81304?auto=format&fit=crop&q=80&w=400"
+                                    ][i - 1]}
+                                    alt="Nail Art Portfolio"
+                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                />
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                    <Heart className="text-white transform scale-50 group-hover:scale-100 transition-all duration-300 w-8 h-8 fill-current" />
                                 </div>
                             </div>
                         ))}

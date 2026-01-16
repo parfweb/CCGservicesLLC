@@ -57,8 +57,15 @@ const HVACDemo: React.FC = () => {
             </nav>
 
             {/* Hero Section - Split Tone */}
-            <section className="relative py-20 lg:py-32 bg-gradient-to-br from-slate-50 via-white to-cyan-50 overflow-hidden">
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-cyan-100/30 skew-x-12 transform origin-top translate-x-32"></div>
+            <section className="relative py-20 lg:py-32 bg-slate-50 overflow-hidden">
+                <div className="absolute inset-0 z-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1581092918847-fb056ee904db?auto=format&fit=crop&q=80&w=2000"
+                        alt="Expert HVAC Service"
+                        className="w-full h-full object-cover opacity-[0.03]"
+                    />
+                </div>
+                <div className="absolute top-0 right-0 w-1/2 h-full bg-cyan-100/20 skew-x-12 transform origin-top translate-x-32"></div>
 
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">

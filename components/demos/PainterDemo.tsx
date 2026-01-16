@@ -95,16 +95,12 @@ const PainterDemo: React.FC = () => {
                         <div className="relative">
                             <div className="relative bg-white p-2 rounded-2xl shadow-2xl transform rotate-1 transition-transform hover:rotate-0 duration-500">
                                 <div className="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden relative">
-                                    {/* Simulated Image */}
-                                    <div className="w-full h-full bg-slate-200 flex items-center justify-center relative overflow-hidden">
-                                        {/* Split Screen Effect */}
-                                        <div className="absolute inset-0 bg-[#e2e8f0] w-1/2 border-r-4 border-white z-10 flex items-center justify-center">
-                                            <span className="bg-white/80 px-4 py-1 rounded text-xs font-bold uppercase tracking-wider text-slate-400">Before</span>
-                                        </div>
-                                        <div className="absolute inset-0 left-1/2 bg-indigo-50 flex items-center justify-center">
-                                            <span className="bg-indigo-600 text-white px-4 py-1 rounded text-xs font-bold uppercase tracking-wider">After</span>
-                                        </div>
-                                    </div>
+                                    <img
+                                        src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=800"
+                                        alt="Modern Painted Interior"
+                                        className="w-full h-full object-cover"
+                                    />
+                                    <div className="absolute top-4 right-4 bg-indigo-600/90 text-white px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wider">Top Rated Finish</div>
                                 </div>
 
                                 {/* Swatches */}

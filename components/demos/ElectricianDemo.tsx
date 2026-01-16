@@ -139,14 +139,13 @@ const ElectricianDemo: React.FC = () => {
                         </div>
                         <div className="relative">
                             <div className="absolute inset-0 border-2 border-yellow-500/20 translate-x-4 translate-y-4 -z-10"></div>
-                            {/* Placeholder for Panel Image */}
-                            <div className="bg-neutral-800 aspect-square flex items-center justify-center p-8 text-center text-neutral-600 border border-neutral-700">
-                                <div className="space-y-4">
-                                    <Battery className="w-16 h-16 mx-auto opacity-20" />
-                                    <p className="font-mono text-xs uppercase tracking-widest">
-                                        {serviceType === 'residential' ? 'Image: Clean Panel Wiring' : 'Image: Industrial Conduit'}
-                                    </p>
-                                </div>
+                            {/* Real Panel Wiring Photo */}
+                            <div className="bg-neutral-800 aspect-square overflow-hidden border border-neutral-700">
+                                <img
+                                    src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800"
+                                    alt="Expert Electrical Panel Wiring"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                         </div>
                     </div>
