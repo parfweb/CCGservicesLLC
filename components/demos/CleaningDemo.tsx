@@ -199,7 +199,7 @@ const CleaningDemo: React.FC = () => {
                     <div className="grid md:grid-cols-2 gap-8">
                         <div className="p-8 rounded-3xl bg-[#F0FDF4] border border-emerald-100 hover:shadow-lg transition-all cursor-pointer group relative overflow-hidden">
                             <img
-                                src="https://images.pexels.com/photos/4239091/pexels-photo-4239091.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                src="https://images.pexels.com/photos/4107120/pexels-photo-4107120.jpeg?auto=compress&cs=tinysrgb&w=600"
                                 alt="Residential Cleaning"
                                 className="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity"
                             />
@@ -219,7 +219,7 @@ const CleaningDemo: React.FC = () => {
                         </div>
                         <div className="p-8 rounded-3xl bg-[#F8FAFC] border border-slate-100 hover:shadow-lg transition-all cursor-pointer group relative overflow-hidden">
                             <img
-                                src="https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                src="https://images.pexels.com/photos/4239036/pexels-photo-4239036.jpeg?auto=compress&cs=tinysrgb&w=600"
                                 alt="Office Cleaning"
                                 className="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity"
                             />
@@ -266,8 +266,8 @@ const CleaningDemo: React.FC = () => {
                         </div>
                         <div className="bg-slate-200 rounded-2xl aspect-video flex items-center justify-center overflow-hidden">
                             <img
-                                src="https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg?auto=compress&cs=tinysrgb&w=800"
-                                alt="Service Area Map"
+                                src="https://images.pexels.com/photos/4108715/pexels-photo-4108715.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="Professional Cleaning Team"
                                 className="w-full h-full object-cover"
                             />
                         </div>
