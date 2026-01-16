@@ -65,21 +65,21 @@ const INDUSTRIES: Record<string, IndustryData> = {
     },
     'nail-salon': {
         title: "Nail Salon Web Design",
-        metaTitle: "Web Design for Nail Salons | Online Booking & Portfolios",
-        metaDesc: "Stop wasting hours on the phone. Get an online booking system and a stunning portfolio gallery for your salon.",
-        heroHeadline: "Wasted Hours Answering The Same Booking Questions All Day?",
-        heroSubheadline: "Automate your appointments and let your Instagram-worthy work sell itself with a stunning gallery.",
+        metaTitle: "Nail Salon Web Design | Online Booking & Stunning Galleries | CCG SiteSpark",
+        metaDesc: "Get more bookings on autopilot. We build beautiful nail salon websites with online scheduling, portfolio galleries, and loyalty rewards. Call (917) 768-8896.",
+        heroHeadline: "Your Nail Art Deserves a Website As Beautiful As Your Work.",
+        heroSubheadline: "Stop losing clients to salons with better websites. Get online booking, Instagram-worthy galleries, and a site that fills your chair every hour.",
         painPoints: [
-            "Phone ringing while you're working?",
-            "No-shows costing you money?",
-            "Clients asking for prices constantly?",
-            "Hard to fill calendar gaps?"
+            "Phone ringing off the hook?",
+            "No-shows eating into profits?",
+            "Clients can't see your prices online?",
+            "Empty slots killing your revenue?"
         ],
         benefits: [
-            "Online booking saves 10+ hours/week",
-            "Portfolio galleries attract clients",
-            "Loyalty programs for repeat visits",
-            "Instagram feed integration"
+            "24/7 online booking (save 10+ hrs/week)",
+            "Portfolio galleries that wow clients",
+            "Automated appointment reminders",
+            "Loyalty & referral programs built-in"
         ],
         demoComponent: <NailSalonDemo />
     },
