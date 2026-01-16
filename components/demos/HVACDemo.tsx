@@ -130,8 +130,8 @@ const HVACDemo: React.FC = () => {
                         {[
                             {
                                 icon: Snowflake,
-                                title: "AC Repair & Install",
-                                desc: "Is your unit making noise or blowing warm air? We fix all brands.",
+                                title: "24/7 AC Repair",
+                                desc: "Is your unit blowing warm air? We restore comfort day or night.",
                                 color: "text-cyan-600",
                                 bg: "bg-cyan-50"
                             },

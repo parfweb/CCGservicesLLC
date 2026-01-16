@@ -8,6 +8,7 @@ import NailSalonDemo from '../components/demos/NailSalonDemo';
 import CleaningDemo from '../components/demos/CleaningDemo';
 import ElectricianDemo from '../components/demos/ElectricianDemo';
 import HVACDemo from '../components/demos/HVACDemo';
+import LandscapingDemo from '../components/demos/LandscapingDemo';
 
 interface IndustryData {
     title: string;
@@ -119,7 +120,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Online estimate requests",
             "Recurring maintenance sign-ups"
         ],
-        demoComponent: <ConstructOneDemo />
+        demoComponent: <LandscapingDemo />
     },
     cleaning: {
         title: "Cleaning Service Web Design",
