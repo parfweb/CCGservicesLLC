@@ -3,6 +3,9 @@ import { Helmet } from 'react-helmet-async';
 import { CheckCircle, Phone, ArrowRight, Star } from 'lucide-react';
 import CTA from '../components/CTA';
 import ConstructOneDemo from '../components/demos/ConstructOneDemo';
+import NovaBoutiqueDemo from '../components/demos/NovaBoutiqueDemo';
+import ZenithFitnessDemo from '../components/demos/ZenithFitnessDemo';
+import EstatePrimeDemo from '../components/demos/EstatePrimeDemo';
 
 interface IndustryData {
     title: string;
@@ -74,7 +77,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Loyalty programs for repeat visits",
             "Instagram feed integration"
         ],
-        demoComponent: <CTA />
+        demoComponent: <NovaBoutiqueDemo />
     },
     painter: {
         title: "Painter & Contractor Web Design",
@@ -114,7 +117,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Online estimate requests",
             "Recurring maintenance sign-ups"
         ],
-        demoComponent: <ConstructOneDemo />
+        demoComponent: <EstatePrimeDemo />
     },
     cleaning: {
         title: "Cleaning Service Web Design",
@@ -134,7 +137,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "One-click quote requests",
             "Trust badges & team photos"
         ],
-        demoComponent: <CTA />
+        demoComponent: <ZenithFitnessDemo />
     },
     hvac: {
         title: "HVAC Web Design",
@@ -174,7 +177,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Insurance & payment info display",
             "Patient education portal"
         ],
-        demoComponent: <CTA />
+        demoComponent: <ZenithFitnessDemo />
     }
 };
 
