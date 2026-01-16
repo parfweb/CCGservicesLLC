@@ -225,25 +225,25 @@ const Hosting: React.FC = () => {
         <div className="bg-zinc-50 rounded-2xl p-6 border border-zinc-200">
           <div className="flex items-center gap-3 mb-5">
             <HelpCircle className="w-5 h-5 text-zinc-500" />
-            <h3 className="font-bold text-brand-black">Quick Answers</h3>
+            <h3 className="font-bold text-brand-black">Common Questions</h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
             <div>
-              <p className="font-bold text-zinc-800 mb-1">"Do I have to pick one?"</p>
-              <p className="text-zinc-600">Yes. Everyone needs at least Essentials ($49) for hosting. The rest is up to you.</p>
+              <p className="font-bold text-zinc-800 mb-1">"Why do I need monthly hosting?"</p>
+              <p className="text-zinc-600">Your website needs a "home" on the internet (a server). It also needs security updates and backups. We handle all of this so you don't have to worry about technical stuff.</p>
+            </div>
+            <div>
+              <p className="font-bold text-zinc-800 mb-1">"Can I host it myself?"</p>
+              <p className="text-zinc-600">Yes! We can hand over the website files to you. But most clients prefer we handle it — it saves headaches and ensures your site stays secure.</p>
             </div>
             <div>
               <p className="font-bold text-zinc-800 mb-1">"What counts as a 'small edit'?"</p>
-              <p className="text-zinc-600">Text changes, swapping photos, updating hours/prices. Not redesigning pages.</p>
+              <p className="text-zinc-600">Text changes, swapping photos, updating hours/prices. Basically anything quick — not full page redesigns.</p>
             </div>
             <div>
-              <p className="font-bold text-zinc-800 mb-1">"Can I upgrade later?"</p>
-              <p className="text-zinc-600">Absolutely. Start with $49 or $99 and upgrade when you're ready to grow.</p>
-            </div>
-            <div>
-              <p className="font-bold text-zinc-800 mb-1">"Any contracts?"</p>
-              <p className="text-zinc-600">No long-term contracts. Month-to-month. Cancel anytime with 30 days notice.</p>
+              <p className="font-bold text-zinc-800 mb-1">"Any long-term contracts?"</p>
+              <p className="text-zinc-600">Nope. Pay month-to-month. Cancel anytime with 30 days notice. No pressure.</p>
             </div>
           </div>
         </div>
