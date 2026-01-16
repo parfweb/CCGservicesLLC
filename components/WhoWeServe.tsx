@@ -1,15 +1,11 @@
 import React from 'react';
 import { Wrench, Zap, Scissors, Paintbrush, TreeDeciduous, Sparkles, Wind, Stethoscope, ArrowRight, CheckCircle2, Droplets } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 const WhoWeServe: React.FC = () => {
-    const navigate = useNavigate();
-
     const industries = [
         {
             icon: <Wrench className="w-7 h-7" />,
             name: "Plumbers",
-            link: "/plumber-web-design",
             desc: "Stop losing emergency jobs to competitors who answer first.",
             benefits: [
                 "24/7 lead capture when pipes burst",
@@ -21,7 +17,6 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Zap className="w-7 h-7" />,
             name: "Electricians",
-            link: "/electrician-web-design",
             desc: "Customers want proof you're licensed and legit before calling.",
             benefits: [
                 "Showcase licenses & certifications",
@@ -33,7 +28,6 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Sparkles className="w-7 h-7" />,
             name: "Nail Salons",
-            link: "/nail-salon-web-design",
             desc: "Wasted hours answering the same booking questions all day?",
             benefits: [
                 "Online booking saves 10+ hours/week",
@@ -45,7 +39,6 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Paintbrush className="w-7 h-7" />,
             name: "Painters & Contractors",
-            link: "/painter-web-design",
             desc: "Your work speaks for itself - if people can actually see it.",
             benefits: [
                 "Before/after galleries that sell jobs",
@@ -57,7 +50,6 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <TreeDeciduous className="w-7 h-7" />,
             name: "Landscaping",
-            link: "/landscaping-web-design",
             desc: "Seasonal work means you need leads all year round.",
             benefits: [
                 "Seasonal service promotions",
@@ -69,7 +61,6 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Droplets className="w-7 h-7" />,
             name: "Cleaning Services",
-            link: "/cleaning-web-design",
             desc: "Customers need quick quotes, not phone tag.",
             benefits: [
                 "Service area coverage maps",
@@ -81,7 +72,6 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Wind className="w-7 h-7" />,
             name: "HVAC & Heating",
-            link: "/hvac-web-design",
             desc: "When the AC breaks, customers call whoever shows up first online.",
             benefits: [
                 "Emergency contact features",
@@ -93,7 +83,6 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Stethoscope className="w-7 h-7" />,
             name: "Dental & Medical",
-            link: "/dental-web-design",
             desc: "Patients expect online booking and secure forms in 2026.",
             benefits: [
                 "HIPAA-compliant patient forms",
@@ -137,19 +126,12 @@ const WhoWeServe: React.FC = () => {
                     {industries.map((item, idx) => (
                         <div
                             key={idx}
-                            onClick={() => {
-                                navigate(item.link);
-                                window.scrollTo(0, 0);
-                            }}
                             className="bg-white p-5 md:p-6 rounded-2xl border border-zinc-200 shadow-sm hover:shadow-lg hover:border-brand-lime hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
                         >
                             <div className={`w-14 h-14 ${item.color} rounded-2xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform`}>
                                 {item.icon}
                             </div>
-                            <h3 className="font-bold text-lg text-brand-black mb-2 flex items-center gap-2">
-                                {item.name}
-                                <ArrowRight className="w-4 h-4 text-brand-lime opacity-0 group-hover:opacity-100 transition-opacity" />
-                            </h3>
+                            <h3 className="font-bold text-lg text-brand-black mb-2">{item.name}</h3>
                             <p className="text-zinc-600 text-sm leading-relaxed mb-4">{item.desc}</p>
 
                             {/* Benefits for each industry */}

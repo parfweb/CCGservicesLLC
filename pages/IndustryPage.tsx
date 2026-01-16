@@ -3,9 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { CheckCircle, Phone, ArrowRight, Star } from 'lucide-react';
 import CTA from '../components/CTA';
 import ConstructOneDemo from '../components/demos/ConstructOneDemo';
-import NovaBoutiqueDemo from '../components/demos/NovaBoutiqueDemo';
-import ZenithFitnessDemo from '../components/demos/ZenithFitnessDemo';
-import EstatePrimeDemo from '../components/demos/EstatePrimeDemo';
+import PlumberDemo from '../components/demos/PlumberDemo';
 
 interface IndustryData {
     title: string;
@@ -22,14 +20,14 @@ const INDUSTRIES: Record<string, IndustryData> = {
     plumber: {
         title: "Plumber Web Design",
         metaTitle: "Web Design for Plumbers | Get More Emergency Calls",
-        metaDesc: "Stop losing emergency jobs to competitors. We build sites with 24/7 lead capture and service area maps.",
+        metaDesc: "Stop losing emergency jobs to competitors. We build sites with 24/7 lead capture and service area maps. Call (917) 768-8896.",
         heroHeadline: "Stop Losing Emergency Jobs To Competitors Who Answer First.",
-        heroSubheadline: "When pipes burst, customers call the first number they see. We build sites that capture those calls instantly.",
+        heroSubheadline: "When pipes burst, customers call the first number they see. We build websites that capture those calls instantly.",
         painPoints: [
             "Missed emergency calls?",
             "Losing jobs to 'big box' competitors?",
             "Customers can't find your service area?",
-            "Wasting time explaining services over the phone?"
+            "Wasting time quoting cheap jobs?"
         ],
         benefits: [
             "24/7 lead capture when pipes burst",
@@ -37,7 +35,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Emergency contact buttons",
             "Mobile-first design for urgent calls"
         ],
-        demoComponent: <ConstructOneDemo />
+        demoComponent: <PlumberDemo />
     },
     electrician: {
         title: "Electrician Web Design",
@@ -57,7 +55,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Get found for 'electrician near me'",
             "Commercial & Residential separation"
         ],
-        demoComponent: <ConstructOneDemo />
+        demoComponent: <ConstructOneDemo /> // Keeps generic demo for now
     },
     'nail-salon': {
         title: "Nail Salon Web Design",
@@ -77,7 +75,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Loyalty programs for repeat visits",
             "Instagram feed integration"
         ],
-        demoComponent: <NovaBoutiqueDemo />
+        demoComponent: <CTA />
     },
     painter: {
         title: "Painter & Contractor Web Design",
@@ -117,7 +115,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Online estimate requests",
             "Recurring maintenance sign-ups"
         ],
-        demoComponent: <EstatePrimeDemo />
+        demoComponent: <ConstructOneDemo />
     },
     cleaning: {
         title: "Cleaning Service Web Design",
@@ -137,7 +135,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "One-click quote requests",
             "Trust badges & team photos"
         ],
-        demoComponent: <ZenithFitnessDemo />
+        demoComponent: <CTA />
     },
     hvac: {
         title: "HVAC Web Design",
@@ -157,7 +155,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Service scheduling 24/7",
             "Seasonal tune-up promotions"
         ],
-        demoComponent: <ConstructOneDemo />
+        demoComponent: <ConstructOneDemo /> // Could reuse Plumber for now but with HVAC tweaks if we had it
     },
     dental: {
         title: "Dental & Medical Web Design",
@@ -177,7 +175,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Insurance & payment info display",
             "Patient education portal"
         ],
-        demoComponent: <ZenithFitnessDemo />
+        demoComponent: <CTA />
     }
 };
 
@@ -248,15 +246,16 @@ const IndustryPage: React.FC<Props> = ({ industry }) => {
                                     </a>
                                 </div>
                             </div>
-                            {/* Dynamic Image or Abstract rep */}
+                            {/* Pain Points / Abstract Panel */}
                             <div className="relative hidden lg:block">
                                 <div className="absolute inset-0 bg-brand-lime/20 blur-3xl rounded-full transform rotate-12"></div>
-                                <div className="relative bg-zinc-900 border border-zinc-800 p-6 rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500">
+                                <div className="relative bg-zinc-900 border border-zinc-800 p-8 rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500">
+                                    <h3 className="text-xl font-bold mb-6 text-white border-b border-zinc-800 pb-4">Common Problems We Fix</h3>
                                     <div className="space-y-4">
                                         {data.painPoints.map((point, index) => (
-                                            <div key={index} className="flex items-center gap-3 p-3 bg-zinc-950 rounded-lg border border-zinc-800/50">
-                                                <div className="w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center text-red-500 shrink-0">
-                                                    X
+                                            <div key={index} className="flex items-center gap-4 p-4 bg-zinc-950/50 rounded-xl border border-zinc-800 group hover:border-red-500/30 transition-colors">
+                                                <div className="w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center text-red-500 shrink-0 group-hover:bg-red-500 group-hover:text-white transition-all">
+                                                    <span className="font-bold text-lg">X</span>
                                                 </div>
                                                 <span className="text-zinc-300 font-medium">{point}</span>
                                             </div>
@@ -278,7 +277,7 @@ const IndustryPage: React.FC<Props> = ({ industry }) => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {data.benefits.map((benefit, index) => (
-                                <div key={index} className="bg-white p-6 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all">
+                                <div key={index} className="bg-white p-6 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
                                     <div className="w-12 h-12 bg-brand-lime/20 rounded-xl flex items-center justify-center text-brand-black mb-4">
                                         <CheckCircle className="w-6 h-6" />
                                     </div>
@@ -289,18 +288,29 @@ const IndustryPage: React.FC<Props> = ({ industry }) => {
                     </div>
                 </section>
 
-                {/* Demo Preview */}
-                <section className="py-24 bg-zinc-50">
-                    <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                {/* Demo Preview - The "Meat" of the page */}
+                <section className="py-24 bg-zinc-100 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-grid-pattern opacity-[0.05]"></div>
+                    <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                         <div className="text-center mb-12">
-                            <h2 className="text-3xl font-bold mb-4 text-brand-black">Live Example</h2>
-                            <p className="text-zinc-600">See what your new website could look like.</p>
+                            <span className="inline-block py-1 px-3 rounded-full bg-brand-lime/20 text-brand-limeDark font-bold text-sm mb-4">Live Design Preview</span>
+                            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-brand-black">See What Your Site Could Look Like</h2>
+                            <p className="text-zinc-600 max-w-2xl mx-auto">This is a live, interactive demo. We customize colors, logos, and content to match your brand perfectly.</p>
                         </div>
-                        {/* We wrap the demo in a container that handles the 'preview' look if needed, 
-                    but these demos are full screen sections usually. We might need to adjust them to fit in a page flow 
-                    or just render them as is. ConstructOneDemo is a full section. */}
-                        <div className="rounded-3xl overflow-hidden border-4 border-zinc-200 shadow-2xl">
-                            {data.demoComponent}
+
+                        <div className="rounded-3xl overflow-hidden border-[8px] border-zinc-800 shadow-2xl bg-white transform hover:scale-[1.01] transition-transform duration-500">
+                            {/* Browser Bar Simulation */}
+                            <div className="bg-zinc-800 px-6 py-3 flex items-center gap-4">
+                                <div className="flex gap-2">
+                                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                                </div>
+                                <div className="flex-1 bg-zinc-700/50 rounded-lg h-6 mx-4"></div>
+                            </div>
+                            <div className="max-h-[800px] overflow-y-auto scrollbar-thin scrollbar-thumb-zinc-300">
+                                {data.demoComponent}
+                            </div>
                         </div>
                     </div>
                 </section>
