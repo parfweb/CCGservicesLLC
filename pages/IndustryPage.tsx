@@ -4,6 +4,7 @@ import { CheckCircle, Phone, ArrowRight, Star } from 'lucide-react';
 import CTA from '../components/CTA';
 import ConstructOneDemo from '../components/demos/ConstructOneDemo';
 import PlumberDemo from '../components/demos/PlumberDemo';
+import NailSalonDemo from '../components/demos/NailSalonDemo';
 
 interface IndustryData {
     title: string;
@@ -75,7 +76,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Loyalty programs for repeat visits",
             "Instagram feed integration"
         ],
-        demoComponent: <CTA />
+        demoComponent: <NailSalonDemo />
     },
     painter: {
         title: "Painter & Contractor Web Design",
