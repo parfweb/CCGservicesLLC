@@ -1,9 +1,25 @@
 import React from 'react';
-import { Calendar, Instagram, Clock, MapPin, Star, Heart, Camera, ArrowRight, Scissors } from 'lucide-react';
+import { Calendar, Instagram, Clock, MapPin, Star, Heart, Camera, ArrowRight, Scissors, Phone } from 'lucide-react';
 
 const NailSalonDemo: React.FC = () => {
     return (
         <div className="bg-[#FDF8F7] text-zinc-800 font-sans selection:bg-pink-200">
+
+            {/* Sticky Mobile Bar */}
+            <div className="fixed bottom-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-t border-pink-100 p-4 flex items-center justify-between md:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.05)]">
+                <div>
+                    <div className="font-serif font-bold text-zinc-900 text-sm">Need a Mani?</div>
+                    <div className="text-xs text-zinc-500">Slots filling fast today</div>
+                </div>
+                <div className="flex gap-3">
+                    <a href="tel:+19177688896" className="w-10 h-10 bg-zinc-100 rounded-full flex items-center justify-center text-zinc-600 hover:bg-zinc-200 transition-colors">
+                        <Phone className="w-4 h-4" />
+                    </a>
+                    <button className="bg-pink-400 text-white px-6 py-2 rounded-full font-bold text-xs tracking-widest shadow-lg shadow-pink-200">
+                        BOOK
+                    </button>
+                </div>
+            </div>
 
             {/* Top Bar - Subtle & Classy */}
             <div className="bg-[#FAEBEB] text-zinc-600 py-3 px-4 text-xs tracking-wider text-center uppercase">
@@ -20,10 +36,11 @@ const NailSalonDemo: React.FC = () => {
                             <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-500">Nail & Spa</span>
                         </div>
 
-                        <div className="hidden md:flex gap-10 font-medium text-zinc-500 text-sm tracking-wide">
+                        <div className="hidden md:flex gap-10 font-medium text-zinc-500 text-sm tracking-wide items-center">
                             <a href="#" className="hover:text-pink-500 transition-colors">SERVICES</a>
                             <a href="#" className="hover:text-pink-500 transition-colors">LOOKBOOK</a>
                             <a href="#" className="hover:text-pink-500 transition-colors">ABOUT</a>
+                            <a href="tel:+19177688896" className="text-zinc-400 hover:text-zinc-900 transition-colors font-serif italic">(917) 768-8896</a>
                         </div>
 
                         <button className="bg-zinc-900 text-white px-8 py-3 rounded-none font-medium text-sm tracking-widest hover:bg-pink-400 hover:border-pink-400 transition-all">

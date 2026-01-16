@@ -91,19 +91,19 @@ const LandscapingDemo: React.FC = () => {
                         <div className="relative grid grid-cols-2 gap-4">
                             <div className="space-y-4 pt-12">
                                 <div className="aspect-[4/5] bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
-                                    <img src="https://images.unsplash.com/photo-1558293842-c0fd3db8415e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lawn" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    <img src="https://images.unsplash.com/photo-1558904541-acf5239e23db?auto=format&fit=crop&w=800&q=80" alt="Lawn Maintenance" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                     <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Maintenance</div>
                                 </div>
                                 <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
-                                    <img src="https://images.unsplash.com/photo-1628135804797-27bde2639d6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Walkway" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Walkway" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                 </div>
                             </div>
                             <div className="space-y-4">
                                 <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
-                                    <img src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Patio" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    <img src="https://images.unsplash.com/photo-1585320806282-3d7751d388cd?auto=format&fit=crop&w=800&q=80" alt="Patio" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                 </div>
                                 <div className="aspect-[4/5] bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
-                                    <img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Garden" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    <img src="https://images.unsplash.com/photo-1598902168898-90f7a93b4823?auto=format&fit=crop&w=800&q=80" alt="Garden Design" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                     <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Design</div>
                                 </div>
                             </div>
