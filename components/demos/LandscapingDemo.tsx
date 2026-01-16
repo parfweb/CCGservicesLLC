@@ -87,37 +87,37 @@ const LandscapingDemo: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Image Grid Mockup */}
+                        {/* Image Grid Mockup - REPAIRED WITH HIGH-STABILITY URLS */}
                         <div className="relative grid grid-cols-2 gap-4">
                             <div className="space-y-4 pt-12">
-                                <div className="aspect-[4/5] bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
+                                <div className="aspect-[4/5] bg-stone-100 rounded-2xl overflow-hidden shadow-lg relative group border border-stone-200">
                                     <img
-                                        src="https://images.unsplash.com/photo-1558904541-acf5239e23db?auto=format&fit=crop&q=80&w=800"
+                                        src="https://images.unsplash.com/photo-1558904541-acf5239e23db?q=80&w=800&auto=format&fit=crop"
                                         alt="Lawn Maintenance"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider text-green-900">Maintenance</div>
                                 </div>
-                                <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
+                                <div className="aspect-square bg-stone-100 rounded-2xl overflow-hidden shadow-lg relative group border border-stone-200">
                                     <img
-                                        src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=800"
-                                        alt="Modern Patio"
+                                        src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=800&auto=format&fit=crop"
+                                        alt="Walkway Design"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                 </div>
                             </div>
                             <div className="space-y-4">
-                                <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
+                                <div className="aspect-square bg-stone-100 rounded-2xl overflow-hidden shadow-lg relative group border border-stone-200">
                                     <img
-                                        src="https://images.unsplash.com/photo-1599692994038-17a4c7f0db4a?auto=format&fit=crop&q=80&w=800"
-                                        alt="Garden Care"
+                                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop"
+                                        alt="Modern Patio"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                 </div>
-                                <div className="aspect-[4/5] bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
+                                <div className="aspect-[4/5] bg-stone-100 rounded-2xl overflow-hidden shadow-lg relative group border border-stone-200">
                                     <img
-                                        src="https://images.unsplash.com/photo-1584464591321-7227eb0dc246?auto=format&fit=crop&q=80&w=800"
-                                        alt="Full Design"
+                                        src="https://images.unsplash.com/photo-1585320806282-3d7751d388cd?q=80&w=800&auto=format&fit=crop"
+                                        alt="Garden Design"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider text-green-900">Design</div>
@@ -140,7 +140,7 @@ const LandscapingDemo: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="flex justify-between items-end mb-16">
                         <h2 className="text-4xl font-serif text-stone-900">Our Services</h2>
-                        <a href="#" className="font-bold text-green-700 hover:text-green-800 border-b border-green-700 pb-1">View Full Service Menu</a>
+                        <a href="#" className="font-bold text-green-800 hover:text-green-800 border-b border-green-700 pb-1">View Full Service Menu</a>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
