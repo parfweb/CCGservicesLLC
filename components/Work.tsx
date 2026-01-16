@@ -3,6 +3,9 @@ import { ArrowRight, Eye, Star, CheckCircle2, X } from 'lucide-react';
 import ApexLogisticsDemo from './demos/ApexLogisticsDemo';
 import NexusTechDemo from './demos/NexusTechDemo';
 import ConstructOneDemo from './demos/ConstructOneDemo';
+import EstatePrimeDemo from './demos/EstatePrimeDemo';
+import ZenithFitnessDemo from './demos/ZenithFitnessDemo';
+import NovaBoutiqueDemo from './demos/NovaBoutiqueDemo';
 
 interface Project {
   id: number;
@@ -56,7 +59,7 @@ const initialProjects: Project[] = [
       "More property inquiries",
       "Mobile-friendly experience"
     ],
-    hasDemo: false
+    hasDemo: true
   },
   {
     id: 4,
@@ -70,7 +73,7 @@ const initialProjects: Project[] = [
       "Reduced front desk workload",
       "Increased membership signups"
     ],
-    hasDemo: false
+    hasDemo: true
   },
   {
     id: 5,
@@ -84,7 +87,7 @@ const initialProjects: Project[] = [
       "Mobile shopping ready",
       "Customers buy more online"
     ],
-    hasDemo: false
+    hasDemo: true
   },
   {
     id: 6,
@@ -247,6 +250,9 @@ const Work: React.FC = () => {
       {/* Render Demo Overlays if Active */}
       {activeDemo === 1 && <ApexLogisticsDemo onClose={closeDemo} />}
       {activeDemo === 2 && <NexusTechDemo onClose={closeDemo} />}
+      {activeDemo === 3 && <EstatePrimeDemo onClose={closeDemo} />}
+      {activeDemo === 4 && <ZenithFitnessDemo onClose={closeDemo} />}
+      {activeDemo === 5 && <NovaBoutiqueDemo onClose={closeDemo} />}
       {activeDemo === 6 && <ConstructOneDemo onClose={closeDemo} />}
     </>
   );
