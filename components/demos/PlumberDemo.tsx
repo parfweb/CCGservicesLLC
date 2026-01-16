@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MapPin, Clock, Shield, CheckCircle, Droplets, Tool, ArrowRight, Star } from 'lucide-react';
+import { Phone, MapPin, Clock, Shield, CheckCircle, Droplets, Wrench, ArrowRight, Star } from 'lucide-react';
 
 const PlumberDemo: React.FC = () => {
     return (
@@ -120,7 +120,7 @@ const PlumberDemo: React.FC = () => {
                     <div className="grid md:grid-cols-3 gap-8">
                         {[
                             { icon: Droplets, title: "Leak Detection", desc: "Advanced acoustic tech to find hidden leaks behind walls." },
-                            { icon: Tool, title: "Drain Cleaning", desc: "Hydro-jetting service to clear stubborn clogs instantly." },
+                            { icon: Wrench, title: "Drain Cleaning", desc: "Hydro-jetting service to clear stubborn clogs instantly." },
                             { icon: Shield, title: "Water Heaters", desc: "Repair and installation of tankless and standard units." }
                         ].map((service, i) => (
                             <div key={i} className="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300">
