@@ -6,6 +6,7 @@ import ConstructOneDemo from '../components/demos/ConstructOneDemo';
 import PlumberDemo from '../components/demos/PlumberDemo';
 import NailSalonDemo from '../components/demos/NailSalonDemo';
 import CleaningDemo from '../components/demos/CleaningDemo';
+import ElectricianDemo from '../components/demos/ElectricianDemo';
 
 interface IndustryData {
     title: string;
@@ -57,7 +58,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Get found for 'electrician near me'",
             "Commercial & Residential separation"
         ],
-        demoComponent: <ConstructOneDemo /> // Keeps generic demo for now
+        demoComponent: <ElectricianDemo />
     },
     'nail-salon': {
         title: "Nail Salon Web Design",
