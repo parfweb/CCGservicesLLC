@@ -56,7 +56,6 @@ const LandscapingDemo: React.FC = () => {
 
             {/* Hero Section */}
             <section className="relative py-24 lg:py-32 overflow-hidden bg-stone-50">
-                {/* Organic Pattern */}
                 <div className="absolute top-0 right-0 w-2/3 h-full bg-green-100/40 rounded-l-[10rem] transform translate-x-20"></div>
 
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
@@ -87,37 +86,37 @@ const LandscapingDemo: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Image Grid Mockup - REPAIRED WITH HIGH-STABILITY URLS */}
+                        {/* IMAGE GRID - Using Lorem Picsum (reliable placeholder service) */}
                         <div className="relative grid grid-cols-2 gap-4">
                             <div className="space-y-4 pt-12">
-                                <div className="aspect-[4/5] bg-stone-100 rounded-2xl overflow-hidden shadow-lg relative group border border-stone-200">
+                                <div className="aspect-[4/5] bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
                                     <img
-                                        src="https://images.unsplash.com/photo-1558904541-acf5239e23db?q=80&w=800&auto=format&fit=crop"
+                                        src="https://picsum.photos/seed/lawn/400/500"
                                         alt="Lawn Maintenance"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider text-green-900">Maintenance</div>
                                 </div>
-                                <div className="aspect-square bg-stone-100 rounded-2xl overflow-hidden shadow-lg relative group border border-stone-200">
+                                <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
                                     <img
-                                        src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=800&auto=format&fit=crop"
-                                        alt="Walkway Design"
+                                        src="https://picsum.photos/seed/patio/400/400"
+                                        alt="Patio Design"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                 </div>
                             </div>
                             <div className="space-y-4">
-                                <div className="aspect-square bg-stone-100 rounded-2xl overflow-hidden shadow-lg relative group border border-stone-200">
+                                <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
                                     <img
-                                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop"
-                                        alt="Modern Patio"
+                                        src="https://picsum.photos/seed/garden/400/400"
+                                        alt="Garden Care"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                 </div>
-                                <div className="aspect-[4/5] bg-stone-100 rounded-2xl overflow-hidden shadow-lg relative group border border-stone-200">
+                                <div className="aspect-[4/5] bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
                                     <img
-                                        src="https://images.unsplash.com/photo-1585320806282-3d7751d388cd?q=80&w=800&auto=format&fit=crop"
-                                        alt="Garden Design"
+                                        src="https://picsum.photos/seed/backyard/400/500"
+                                        alt="Full Design"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider text-green-900">Design</div>
