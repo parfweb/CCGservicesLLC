@@ -125,21 +125,21 @@ const INDUSTRIES: Record<string, IndustryData> = {
     },
     cleaning: {
         title: "Cleaning Service Web Design",
-        metaTitle: "Web Design for Cleaning Companies | Instant Quotes",
-        metaDesc: "Customers need quick quotes, not phone tag. Get a site with instant pricing calculators and coverage maps.",
-        heroHeadline: "Customers Need Quick Quotes, Not Phone Tag.",
-        heroSubheadline: "The cleaning company that gives a price first, wins. We build instant quote tools into your site.",
+        metaTitle: "Cleaning Service Web Design | Instant Quotes & Online Booking | CCG SiteSpark",
+        metaDesc: "Stop playing phone tag! We build cleaning websites with instant pricing calculators, online booking, and service area maps. Get more clients on autopilot. Call (917) 768-8896.",
+        heroHeadline: "Stop Playing Phone Tag. Start Getting Instant Bookings.",
+        heroSubheadline: "The cleaning company that gives a price first, wins. We build instant quote calculators that turn website visitors into paying clients while you clean.",
         painPoints: [
-            "Endless 'how much' phone calls?",
-            "Scheduling nightmares?",
-            "Trust issues with new clients?",
-            "Staffing for unknown volume?"
+            "Drowning in 'how much?' calls?",
+            "No-shows wasting your day?",
+            "Competitors booking faster online?",
+            "Can't scale because of scheduling chaos?"
         ],
         benefits: [
+            "Instant pricing calculators (24/7)",
+            "Online booking & payment",
             "Service area coverage maps",
-            "Instant pricing calculators",
-            "One-click quote requests",
-            "Trust badges & team photos"
+            "Automated reminders & reviews"
         ],
         demoComponent: <CleaningDemo />
     },
