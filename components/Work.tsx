@@ -3,9 +3,6 @@ import { ArrowRight, Eye, Star, CheckCircle2, X } from 'lucide-react';
 import ApexLogisticsDemo from './demos/ApexLogisticsDemo';
 import NexusTechDemo from './demos/NexusTechDemo';
 import ConstructOneDemo from './demos/ConstructOneDemo';
-import PlumberDemo from './demos/PlumberDemo';
-import NailSalonDemo from './demos/NailSalonDemo';
-import CleaningDemo from './demos/CleaningDemo';
 
 interface Project {
   id: number;
@@ -49,45 +46,45 @@ const initialProjects: Project[] = [
   },
   {
     id: 3,
-    title: "RapidFlow Plumbing",
-    category: "Home Services",
-    description: "Emergency plumbing service with 24/7 dispatch capabilities.",
-    image: "/screenshots/estate-prime.png", // Placeholder image
+    title: "Estate Prime",
+    category: "Real Estate",
+    description: "Luxury property listing portal with virtual tours.",
+    image: "/screenshots/estate-prime.png",
     result: "Page 1 on Google",
     benefits: [
-      "24/7 Leak Dispatch System",
-      "Local SEO Domination",
-      "Emergency Click-to-Call"
+      "Top Google rankings locally",
+      "More property inquiries",
+      "Mobile-friendly experience"
     ],
-    hasDemo: true
+    hasDemo: false
   },
   {
     id: 4,
-    title: "Lumière Nail Spa",
-    category: "Beauty & Wellness",
-    description: "Luxury salon booking system with Instagram portfolio integration.",
-    image: "/screenshots/zenith-fitness.png", // Placeholder image
+    title: "Zenith Fitness",
+    category: "Health & Wellness",
+    description: "Membership portal and class scheduling app.",
+    image: "/screenshots/zenith-fitness.png",
     result: "40% more bookings",
     benefits: [
-      "Online Appointment Booking",
-      "Instagram Feed Gallery",
-      "Mobile-First Experience"
+      "Online class bookings 24/7",
+      "Reduced front desk workload",
+      "Increased membership signups"
     ],
-    hasDemo: true
+    hasDemo: false
   },
   {
     id: 5,
-    title: "PureSpace Cleaning",
-    category: "Cleaning Services",
-    description: "Instant quote calculator and booking platform for cleaners.",
-    image: "/screenshots/nova-boutique.png", // Placeholder image
-    result: "3x online quotes",
+    title: "Nova Boutique",
+    category: "E-Commerce",
+    description: "High-fashion retail store with seamless checkout.",
+    image: "/screenshots/nova-boutique.png",
+    result: "3x online sales",
     benefits: [
-      "Instant Price Calculator",
-      "Automated Scheduling",
-      "Trust Badge Integration"
+      "Smooth checkout process",
+      "Mobile shopping ready",
+      "Customers buy more online"
     ],
-    hasDemo: true
+    hasDemo: false
   },
   {
     id: 6,
@@ -248,27 +245,8 @@ const Work: React.FC = () => {
       </section>
 
       {/* Render Demo Overlays if Active */}
-      {/* Existing demos (Apex, Nexus, Construct) have their own wrappers */}
       {activeDemo === 1 && <ApexLogisticsDemo onClose={closeDemo} />}
       {activeDemo === 2 && <NexusTechDemo onClose={closeDemo} />}
-
-      {/* New demos need the wrapper */}
-      {activeDemo === 3 && (
-        <DemoWrapper onClose={closeDemo} title="RapidFlow Plumbing">
-          <PlumberDemo />
-        </DemoWrapper>
-      )}
-      {activeDemo === 4 && (
-        <DemoWrapper onClose={closeDemo} title="Lumière Nail Spa">
-          <NailSalonDemo />
-        </DemoWrapper>
-      )}
-      {activeDemo === 5 && (
-        <DemoWrapper onClose={closeDemo} title="PureSpace Cleaning">
-          <CleaningDemo />
-        </DemoWrapper>
-      )}
-
       {activeDemo === 6 && <ConstructOneDemo onClose={closeDemo} />}
     </>
   );
