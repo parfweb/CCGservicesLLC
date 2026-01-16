@@ -10,6 +10,7 @@ import ElectricianDemo from '../components/demos/ElectricianDemo';
 import HVACDemo from '../components/demos/HVACDemo';
 import LandscapingDemo from '../components/demos/LandscapingDemo';
 import PainterDemo from '../components/demos/PainterDemo';
+import DentalDemo from '../components/demos/DentalDemo';
 
 interface IndustryData {
     title: string;
@@ -165,23 +166,23 @@ const INDUSTRIES: Record<string, IndustryData> = {
     },
     dental: {
         title: "Dental & Medical Web Design",
-        metaTitle: "Web Design for Dentists | HIPAA Compliant Forms",
-        metaDesc: "Patients expect online booking and secure forms in 2026. Upgrade your practice with a modern, compliant website.",
-        heroHeadline: "Patients Expect Online Booking And Secure Forms In 2026.",
-        heroSubheadline: "Don't let a fax-machine era website scare away modern patients who live on their phones.",
+        metaTitle: "Dental Web Design | Online Booking & HIPAA Forms | CCG SiteSpark",
+        metaDesc: "Patients expect online booking in 2026. We build modern dental websites with HIPAA-compliant forms, online scheduling, and insurance info. Call (917) 768-8896.",
+        heroHeadline: "Your Patients Expect Online Booking. Can They Get It?",
+        heroSubheadline: "Stop losing new patients to competitors with better websites. We build HIPAA-compliant sites that book appointments 24/7.",
         painPoints: [
-            "Front desk overwhelmed?",
-            "New patients finding you hard to book?",
-            "Outdated forms printed on paper?",
-            "Website looks like 1999?"
+            "Front desk drowning in phone calls?",
+            "New patients going to competitors?",
+            "Paper forms wasting everyone's time?",
+            "Website looks outdated and unprofessional?"
         ],
         benefits: [
             "HIPAA-compliant patient forms",
-            "Online appointment booking",
+            "24/7 online appointment booking",
             "Insurance & payment info display",
-            "Patient education portal"
+            "Modern, trust-building design"
         ],
-        demoComponent: <CTA />
+        demoComponent: <DentalDemo />
     }
 };
 
