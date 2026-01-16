@@ -84,22 +84,22 @@ const INDUSTRIES: Record<string, IndustryData> = {
         demoComponent: <NailSalonDemo />
     },
     painter: {
-        title: "Painter & Contractor Web Design",
-        metaTitle: "Web Design for Painters | Before & After Galleries",
-        metaDesc: "Your work speaks for itself. Show it off with high-resolution before/after galleries and instant quote forms.",
-        heroHeadline: "Web Design for Painters: Turn Lookers Into Buyers With Stunning Galleries.",
-        heroSubheadline: "Homeowners buy with their eyes. We build galleries that turn 'maybe' into 'when can you start?'",
+        title: "Painter Web Design",
+        metaTitle: "Painter Web Design | Before & After Galleries That Sell | CCG SiteSpark",
+        metaDesc: "Your work speaks for itself—show it off! We build stunning painter websites with before/after galleries, instant quotes, and 5-star reviews. Call (917) 768-8896.",
+        heroHeadline: "Your Best Work Deserves More Than a Yard Sign.",
+        heroSubheadline: "Homeowners buy with their eyes. We build websites with jaw-dropping galleries that turn 'maybe' into 'when can you start?'",
         painPoints: [
-            "Hard to visualize your quality?",
-            "Relying only on yard signs?",
-            "Chasing leads for quotes?",
-            "Seasonal slow-downs?"
+            "Losing jobs to cheaper competitors?",
+            "Customers can't see your quality online?",
+            "Spending hours chasing quotes?",
+            "Winter slow-downs killing cash flow?"
         ],
         benefits: [
-            "Before/after galleries that sell jobs",
-            "Instant quote request forms",
-            "Project portfolio showcase",
-            "Service area SEO domination"
+            "Before/after galleries that close deals",
+            "Instant quote forms (24/7 leads)",
+            "Color visualizer tool for clients",
+            "Reviews & testimonials showcase"
         ],
         demoComponent: <PainterDemo />
     },
