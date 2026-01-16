@@ -7,6 +7,7 @@ import PlumberDemo from '../components/demos/PlumberDemo';
 import NailSalonDemo from '../components/demos/NailSalonDemo';
 import CleaningDemo from '../components/demos/CleaningDemo';
 import ElectricianDemo from '../components/demos/ElectricianDemo';
+import HVACDemo from '../components/demos/HVACDemo';
 
 interface IndustryData {
     title: string;
@@ -158,7 +159,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Service scheduling 24/7",
             "Seasonal tune-up promotions"
         ],
-        demoComponent: <ConstructOneDemo /> // Could reuse Plumber for now but with HVAC tweaks if we had it
+        demoComponent: <HVACDemo />
     },
     dental: {
         title: "Dental & Medical Web Design",
