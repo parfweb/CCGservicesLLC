@@ -6,6 +6,7 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Wrench className="w-7 h-7" />,
             name: "Plumbers",
+            link: "/plumber-web-design",
             desc: "Stop losing emergency jobs to competitors who answer first.",
             benefits: [
                 "24/7 lead capture when pipes burst",
@@ -17,6 +18,7 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Zap className="w-7 h-7" />,
             name: "Electricians",
+            link: "/electrician-web-design",
             desc: "Customers want proof you're licensed and legit before calling.",
             benefits: [
                 "Showcase licenses & certifications",
@@ -28,6 +30,7 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Sparkles className="w-7 h-7" />,
             name: "Nail Salons",
+            link: "/nail-salon-web-design",
             desc: "Wasted hours answering the same booking questions all day?",
             benefits: [
                 "Online booking saves 10+ hours/week",
@@ -39,6 +42,7 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Paintbrush className="w-7 h-7" />,
             name: "Painters & Contractors",
+            link: "/painter-web-design",
             desc: "Your work speaks for itself - if people can actually see it.",
             benefits: [
                 "Before/after galleries that sell jobs",
@@ -50,6 +54,7 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <TreeDeciduous className="w-7 h-7" />,
             name: "Landscaping",
+            link: "/landscaping-web-design",
             desc: "Seasonal work means you need leads all year round.",
             benefits: [
                 "Seasonal service promotions",
@@ -61,6 +66,7 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Droplets className="w-7 h-7" />,
             name: "Cleaning Services",
+            link: "/cleaning-web-design",
             desc: "Customers need quick quotes, not phone tag.",
             benefits: [
                 "Service area coverage maps",
@@ -72,6 +78,7 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Wind className="w-7 h-7" />,
             name: "HVAC & Heating",
+            link: "/hvac-web-design",
             desc: "When the AC breaks, customers call whoever shows up first online.",
             benefits: [
                 "Emergency contact features",
@@ -83,6 +90,7 @@ const WhoWeServe: React.FC = () => {
         {
             icon: <Stethoscope className="w-7 h-7" />,
             name: "Dental & Medical",
+            link: "/dental-web-design",
             desc: "Patients expect online booking and secure forms in 2026.",
             benefits: [
                 "HIPAA-compliant patient forms",
@@ -124,9 +132,10 @@ const WhoWeServe: React.FC = () => {
                 {/* Industries Grid */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12">
                     {industries.map((item, idx) => (
-                        <div
+                        <a
                             key={idx}
-                            className="bg-white p-5 md:p-6 rounded-2xl border border-zinc-200 shadow-sm hover:shadow-lg hover:border-brand-lime hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
+                            href={item.link}
+                            className="bg-white p-5 md:p-6 rounded-2xl border border-zinc-200 shadow-sm hover:shadow-lg hover:border-brand-lime hover:-translate-y-1 transition-all duration-300 cursor-pointer group block"
                         >
                             <div className={`w-14 h-14 ${item.color} rounded-2xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform`}>
                                 {item.icon}
@@ -143,7 +152,7 @@ const WhoWeServe: React.FC = () => {
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
 
