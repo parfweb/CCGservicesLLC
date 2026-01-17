@@ -132,6 +132,10 @@ const Hosting: React.FC = () => {
               </li>
               <li className="flex items-start gap-2 text-zinc-700">
                 <Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                <span><strong>Monthly Traffic Summary</strong> (See results)</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
                 <span>Monthly performance check</span>
               </li>
               <li className="flex items-start gap-2 text-zinc-400">
@@ -192,11 +196,11 @@ const Hosting: React.FC = () => {
               </li>
               <li className="flex items-start gap-2 text-zinc-700">
                 <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
-                <span>Monthly traffic report</span>
+                <span>Advanced ROI & Competitor Report</span>
               </li>
               <li className="flex items-start gap-2 text-zinc-700">
                 <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
-                <span>Competitor monitoring</span>
+                <span>Backlink monitoring</span>
               </li>
             </ul>
 
