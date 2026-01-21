@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Phone, Mail, MapPin, Clock, Shield, Award, Headphones } from 'lucide-react';
+import { X, Phone, Mail, MapPin, Clock, Shield, Award, Headphones, Facebook, Linkedin } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Footer: React.FC = () => {
@@ -99,9 +99,26 @@ const Footer: React.FC = () => {
               <p className="text-zinc-400 leading-relaxed mb-6 max-w-md">
                 Professional web design and digital marketing for local service businesses. We help plumbers, electricians, salons, and small business owners get found online and grow their customer base.
               </p>
-              {/* Social Icons (Keeping specific ones) */}
+              {/* Social Icons */}
               <div className="flex gap-4">
-                {/* ... icons ... */}
+                <a
+                  href="https://www.facebook.com/people/CCG-SiteSpark/61586624533775/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-lime hover:text-brand-black transition-all duration-300"
+                  aria-label="Follow us on Facebook"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/ccg-sitespark/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-lime hover:text-brand-black transition-all duration-300"
+                  aria-label="Follow us on LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
               </div>
             </div>
 
