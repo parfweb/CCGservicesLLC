@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/ccg-sitespark/"
+                  href="https://www.linkedin.com/company/111488258/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-lime hover:text-brand-black transition-all duration-300"
