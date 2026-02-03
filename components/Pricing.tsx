@@ -27,7 +27,7 @@ const Pricing: React.FC = () => {
         {/* Quick comparison helper */}
         <div className="text-center mb-12 p-4 bg-white rounded-xl border border-zinc-200 inline-block mx-auto">
           <p className="text-sm text-zinc-600">
-            <strong className="text-brand-black">Not sure which to pick?</strong> Most small businesses choose <span className="text-brand-limeDark font-bold">Growth</span> — it has everything you need to get customers calling.
+            <strong className="text-brand-black">Not sure which to pick?</strong> Most small businesses choose <span className="text-brand-limeDark font-bold">Growth</span> - it has everything you need to get customers calling.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ const Pricing: React.FC = () => {
             </div>
 
             <div className="mb-6">
-              <div className="text-4xl font-bold text-brand-black">$500</div>
+              <div className="text-4xl font-bold text-brand-black">$999</div>
               <p className="text-xs text-zinc-400 mt-1">One-time payment</p>
             </div>
 
@@ -125,7 +125,7 @@ const Pricing: React.FC = () => {
             </div>
 
             <div className="mb-6">
-              <div className="text-4xl font-bold text-brand-black">$1,000</div>
+              <div className="text-4xl font-bold text-brand-black">$1,999</div>
               <p className="text-xs text-zinc-400 mt-1">One-time payment</p>
             </div>
 
@@ -194,7 +194,7 @@ const Pricing: React.FC = () => {
             </div>
 
             <div className="mb-6">
-              <div className="text-4xl font-bold text-brand-black">$1,800</div>
+              <div className="text-4xl font-bold text-brand-black">$3,499</div>
               <p className="text-xs text-zinc-400 mt-1">One-time payment</p>
             </div>
 
@@ -252,7 +252,7 @@ const Pricing: React.FC = () => {
               <span className="font-bold"> Pro</span> = Ready to dominate my market
             </p>
             <p className="mt-4 text-sm">
-              <a href="#contact" onClick={(e) => handleScroll(e, '#contact')} className="text-brand-black font-bold underline">Not sure? Let's talk — no pressure, free consultation.</a>
+              <a href="#contact" onClick={(e) => handleScroll(e, '#contact')} className="text-brand-black font-bold underline">Not sure? Let's talk - no pressure, free consultation.</a>
             </p>
           </div>
         </div>

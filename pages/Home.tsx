@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import WhoWeServe from '../components/WhoWeServe';
 import Work from '../components/Work';
@@ -13,11 +13,11 @@ import CTA from '../components/CTA';
 const Home: React.FC = () => {
     return (
         <>
-            <Helmet>
-                <title>CCG SiteSpark | Web Design for Plumbers, Electricians & Local Businesses</title>
-                <meta name="description" content="Professional websites for plumbers, electricians, nail salons, and local service businesses. Get more customers calling. Starting at $500." />
-                <link rel="canonical" href="https://ccgsitespark.com/" />
-            </Helmet>
+            <SEO
+                title="Web Design for Plumbers, Electricians & Local Businesses"
+                description="Professional websites for plumbers, electricians, nail salons, and local service businesses. Get more customers calling. Starting at $500."
+                canonical="https://ccgsitespark.com/"
+            />
             <main>
                 <Hero />
                 <Work />

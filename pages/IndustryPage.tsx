@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { CheckCircle, Phone, ArrowRight, Star } from 'lucide-react';
 import CTA from '../components/CTA';
 import ConstructOneDemo from '../components/demos/ConstructOneDemo';
@@ -87,7 +87,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
     painter: {
         title: "Painter Web Design",
         metaTitle: "Painter Web Design | Before & After Galleries That Sell | CCG SiteSpark",
-        metaDesc: "Your work speaks for itself—show it off! We build stunning painter websites with before/after galleries, instant quotes, and 5-star reviews. Call (917) 768-8896.",
+        metaDesc: "Your work speaks for itself - show it off! We build stunning painter websites with before/after galleries, instant quotes, and 5-star reviews. Call (917) 768-8896.",
         heroHeadline: "Your Best Work Deserves More Than a Yard Sign.",
         heroSubheadline: "Homeowners buy with their eyes. We build websites with jaw-dropping galleries that turn 'maybe' into 'when can you start?'",
         painPoints: [
@@ -205,25 +205,11 @@ const IndustryPage: React.FC<Props> = ({ industry }) => {
 
     return (
         <>
-            <Helmet>
-                <title>{data.metaTitle} | CCG SiteSpark</title>
-                <meta name="description" content={data.metaDesc} />
-                <link rel="canonical" href={`https://ccgsitespark.com/${industry}-web-design`} />
-
-                {/* Open Graph / Facebook */}
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content={`https://ccgsitespark.com/${industry}-web-design`} />
-                <meta property="og:title" content={data.metaTitle} />
-                <meta property="og:description" content={data.metaDesc} />
-                <meta property="og:image" content="https://ccgsitespark.com/hero-image.jpg" />
-
-                {/* Twitter */}
-                <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content={`https://ccgsitespark.com/${industry}-web-design`} />
-                <meta property="twitter:title" content={data.metaTitle} />
-                <meta property="twitter:description" content={data.metaDesc} />
-                <meta property="twitter:image" content="https://ccgsitespark.com/hero-image.jpg" />
-            </Helmet>
+            <SEO
+                title={data.title}
+                description={data.metaDesc}
+                canonical={`https://ccgsitespark.com/${industry}-web-design`}
+            />
 
             <main className="bg-[#FAFAFA]">
                 {/* Hero Section */}

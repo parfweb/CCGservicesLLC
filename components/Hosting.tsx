@@ -158,14 +158,16 @@ const Hosting: React.FC = () => {
           </div>
 
           {/* Tier 3: Growth */}
-          <div className="bg-white p-6 rounded-2xl border border-zinc-200 flex flex-col">
+          <div className="bg-white p-6 rounded-2xl border border-zinc-200 flex flex-col relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-blue-100 px-3 py-1 text-[10px] font-bold uppercase text-blue-700 rounded-bl-lg">Best Value</div>
+
             <div className="flex items-center gap-3 mb-3">
               <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
                 <TrendingUp className="w-5 h-5" />
               </div>
               <div>
                 <h3 className="font-bold text-brand-black">Growth</h3>
-                <p className="text-xs text-zinc-400">Get More Customers</p>
+                <p className="text-xs text-zinc-400">Your Marketing Partner</p>
               </div>
             </div>
 
@@ -174,7 +176,7 @@ const Hosting: React.FC = () => {
             </div>
 
             <p className="text-xs text-zinc-500 mb-4 pb-4 border-b border-zinc-100">
-              <strong>Best for:</strong> "I want my website to actively bring in new customers. Help me rank on Google."
+              <strong>Best for:</strong> "I want a dedicated partner to handle my marketing, reputation, and rankings so I can focus on my business."
             </p>
 
             <ul className="space-y-2 mb-6 flex-1 text-sm">
@@ -184,15 +186,19 @@ const Hosting: React.FC = () => {
               </li>
               <li className="flex items-start gap-2 text-zinc-700">
                 <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
-                <span><strong>2 blog posts/month</strong> (we write them)</span>
+                <span><strong>Reputation Management</strong> (Reviews)</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                <span><strong>2 blog posts</strong> + Social Media Snippets</span>
+              </li>
+              <li className="flex items-start gap-2 text-zinc-700">
+                <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                <span><strong>Monthly "Map Pack" Optimization</strong></span>
               </li>
               <li className="flex items-start gap-2 text-zinc-700">
                 <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
                 <span>Google ranking optimization</span>
-              </li>
-              <li className="flex items-start gap-2 text-zinc-700">
-                <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
-                <span>Google Business Profile updates</span>
               </li>
               <li className="flex items-start gap-2 text-zinc-700">
                 <Check className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
@@ -207,7 +213,7 @@ const Hosting: React.FC = () => {
             <a
               href="#contact"
               onClick={(e) => handleScroll(e, '#contact')}
-              className="block text-center w-full py-2.5 border border-zinc-200 text-brand-black font-bold rounded-lg hover:bg-zinc-50 transition-colors text-sm"
+              className="block text-center w-full py-2.5 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors text-sm shadow-md"
             >
               Choose Growth
             </a>
@@ -239,11 +245,11 @@ const Hosting: React.FC = () => {
             </div>
             <div>
               <p className="font-bold text-zinc-800 mb-1">"Can I host it myself?"</p>
-              <p className="text-zinc-600">Yes! We can hand over the website files to you. But most clients prefer we handle it — it saves headaches and ensures your site stays secure.</p>
+              <p className="text-zinc-600">Yes! We can hand over the website files to you. But most clients prefer we handle it - it saves headaches and ensures your site stays secure.</p>
             </div>
             <div>
               <p className="font-bold text-zinc-800 mb-1">"What counts as a 'small edit'?"</p>
-              <p className="text-zinc-600">Text changes, swapping photos, updating hours/prices. Basically anything quick — not full page redesigns.</p>
+              <p className="text-zinc-600">Text changes, swapping photos, updating hours/prices. Basically anything quick - not full page redesigns.</p>
             </div>
             <div>
               <p className="font-bold text-zinc-800 mb-1">"Any long-term contracts?"</p>

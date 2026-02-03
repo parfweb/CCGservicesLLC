@@ -7,7 +7,7 @@ const FAQ: React.FC = () => {
   const faqs = [
     {
       q: "How much does a website cost?",
-      a: "Our website packages are: Starter ($500) for a basic 3-page site, Growth ($1,000) for a full business website with SEO, and Pro ($1,800) for established businesses wanting to dominate their market. Most small businesses pick Growth."
+      a: "Our website packages are: Starter ($999) for a basic 3-page site, Growth ($1,999) for a full business website with SEO, and Pro ($3,499) for established businesses wanting to dominate their market. Most small businesses pick Growth."
     },
     {
       q: "What are the monthly costs after my website is built?",
@@ -17,7 +17,7 @@ const FAQ: React.FC = () => {
 • Care ($99/mo) - Same as above + we make small edits for you (text, photos, prices).
 • Growth ($249/mo) - Same as above + 2 blog posts per month + SEO work to get you found on Google.
 
-You can also host it yourself if you prefer — we'll hand over the files.`
+You can also host it yourself if you prefer - we'll hand over the files.`
     },
     {
       q: "How long does it take to build a website?",
@@ -35,7 +35,7 @@ We work fast without cutting corners on quality.`
     },
     {
       q: "Will my website work on mobile phones?",
-      a: "Yes! All our websites are designed 'mobile-first' — meaning they look perfect on phones, tablets, and computers. Over 60% of your customers are on mobile, so this is non-negotiable for us."
+      a: "Yes! All our websites are designed 'mobile-first' - meaning they look perfect on phones, tablets, and computers. Over 60% of your customers are on mobile, so this is non-negotiable for us."
     },
     {
       q: "Can you manage my social media and ads?",
