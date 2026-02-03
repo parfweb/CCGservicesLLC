@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import MobileCallBar from './components/MobileCallBar';
 import Home from './pages/Home';
 import IndustryPage from './pages/IndustryPage';
+import Success from './pages/Success';
+import Cancel from './pages/Cancel';
 
 const App: React.FC = () => {
   const location = useLocation();
@@ -27,6 +29,8 @@ const App: React.FC = () => {
         <Route path="/cleaning-web-design" element={<IndustryPage industry="cleaning" />} />
         <Route path="/hvac-web-design" element={<IndustryPage industry="hvac" />} />
         <Route path="/dental-web-design" element={<IndustryPage industry="dental" />} />
+        <Route path="/success" element={<Success />} />
+        <Route path="/cancel" element={<Cancel />} />
       </Routes>
       <Footer />
       <MobileCallBar />

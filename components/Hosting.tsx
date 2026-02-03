@@ -1,5 +1,5 @@
 import React from 'react';
-import { Server, Wrench, TrendingUp, Check, X, HelpCircle, AlertTriangle } from 'lucide-react';
+import { Server, Wrench, TrendingUp, Check, X, HelpCircle, AlertTriangle, ArrowRight } from 'lucide-react';
 
 const Hosting: React.FC = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -86,12 +86,8 @@ const Hosting: React.FC = () => {
               </li>
             </ul>
 
-            <a
-              href="#contact"
-              onClick={(e) => handleScroll(e, '#contact')}
-              className="block text-center w-full py-2.5 border border-zinc-200 text-brand-black font-bold rounded-lg hover:bg-zinc-50 transition-colors text-sm"
-            >
-              Choose Essentials
+            <a href="https://buy.stripe.com/cNi00d1cb6Gc7mV5WZ18c03" className="w-full py-3 text-center rounded-lg font-bold bg-white border border-zinc-200 text-brand-black hover:border-brand-lime hover:bg-brand-lime/5 transition-all flex items-center justify-center gap-2 group">
+              Choose Essentials <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
 
@@ -148,12 +144,8 @@ const Hosting: React.FC = () => {
               </li>
             </ul>
 
-            <a
-              href="#contact"
-              onClick={(e) => handleScroll(e, '#contact')}
-              className="block text-center w-full py-2.5 btn-primary font-bold rounded-lg text-sm"
-            >
-              Choose Care
+            <a href="https://buy.stripe.com/6oUbIV5sr4y4gXvbhj18c04" className="w-full py-3 text-center rounded-lg font-bold bg-brand-lime text-brand-black hover:bg-brand-limeDark transition-all shadow-lg hover:shadow-brand-lime/20 flex items-center justify-center gap-2 group">
+              Choose Care Plan <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
 
@@ -210,12 +202,8 @@ const Hosting: React.FC = () => {
               </li>
             </ul>
 
-            <a
-              href="#contact"
-              onClick={(e) => handleScroll(e, '#contact')}
-              className="block text-center w-full py-2.5 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors text-sm shadow-md"
-            >
-              Choose Growth
+            <a href="https://buy.stripe.com/3cI5kx7Az0hOcHf0CF18c05" className="w-full py-3 text-center rounded-lg font-bold bg-brand-black text-white hover:bg-zinc-800 transition-all flex items-center justify-center gap-2 group">
+              Choose Growth <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
         </div>
@@ -226,8 +214,8 @@ const Hosting: React.FC = () => {
           <p className="text-blue-700 text-sm mb-4">
             We offer custom plans starting at <strong>$399/mo</strong> with 4+ blog posts, backlink building, and dedicated SEO strategy.
           </p>
-          <a href="#contact" onClick={(e) => handleScroll(e, '#contact')} className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-blue-700 transition-colors">
-            Get Custom Quote
+          <a href="https://buy.stripe.com/9B65kx9IHd4AePnbhj18c06" className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 group">
+            Get Custom Quote <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
 
