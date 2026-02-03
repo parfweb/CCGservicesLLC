@@ -25,5 +25,17 @@
     },
     "allowImportingTsExtensions": true,
     "noEmit": true
-  }
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "ccg-leads-email-sender",
+    "ccg-email-warming",
+    "ccg-leads-scalping",
+    "ccg-social-marketing",
+    ".agent"
+  ]
 }
