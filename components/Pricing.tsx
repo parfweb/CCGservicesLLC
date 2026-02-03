@@ -95,7 +95,7 @@ const Pricing: React.FC = () => {
               </ul>
             </div>
 
-            <a href="https://buy.stripe.com/3cI9AN2gf5C8bDb85718c02" className="w-full py-4 text-center rounded-xl font-bold bg-white text-brand-black border border-zinc-200 hover:border-brand-black transition-all flex items-center justify-center gap-2 group">
+            <a href="https://buy.stripe.com/6oU6oB1cb9SofTrbhj18c00" className="w-full py-4 text-center rounded-xl font-bold bg-white text-brand-black border border-zinc-200 hover:border-brand-black transition-all flex items-center justify-center gap-2 group">
               Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
@@ -162,7 +162,7 @@ const Pricing: React.FC = () => {
               <p className="text-xs text-green-600 mt-1">"I started getting calls from Google within 2 weeks!"</p>
             </div>
 
-            <a href="https://buy.stripe.com/6oU6oB1cb9SofTrbhj18c00" className="w-full py-4 text-center rounded-xl font-bold bg-brand-lime text-brand-black hover:bg-brand-limeDark transition-all shadow-lg hover:shadow-brand-lime/20 flex items-center justify-center gap-2 group">
+            <a href="https://buy.stripe.com/dR6eYv2gf5C8bDb85718c00" className="w-full py-4 text-center rounded-xl font-bold bg-brand-lime text-brand-black hover:bg-brand-limeDark transition-all shadow-lg hover:shadow-brand-lime/20 flex items-center justify-center gap-2 group">
               Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
@@ -221,7 +221,7 @@ const Pricing: React.FC = () => {
               </ul>
             </div>
 
-            <a href="https://buy.stripe.com/dR6eYv2gf5C8bDb85718c00" className="w-full py-4 text-center rounded-xl font-bold bg-white text-brand-black border border-zinc-200 hover:border-brand-black transition-all flex items-center justify-center gap-2 group">
+            <a href="https://buy.stripe.com/3cI9AN2gf5C8bDb85718c02" className="w-full py-4 text-center rounded-xl font-bold bg-white text-brand-black border border-zinc-200 hover:border-brand-black transition-all flex items-center justify-center gap-2 group">
               Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
