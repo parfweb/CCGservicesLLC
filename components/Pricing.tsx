@@ -162,7 +162,7 @@ const Pricing: React.FC = () => {
               <p className="text-xs text-green-600 mt-1">"I started getting calls from Google within 2 weeks!"</p>
             </div>
 
-            <a href="https://buy.stripe.com/dR6eYv2gf5C8bDb85718c00" className="w-full py-4 text-center rounded-xl font-bold bg-brand-lime text-brand-black hover:bg-brand-limeDark transition-all shadow-lg hover:shadow-brand-lime/20 flex items-center justify-center gap-2 group">
+            <a href="https://buy.stripe.com/00w00d2gf2pW6iRdpr18c01" className="w-full py-4 text-center rounded-xl font-bold bg-brand-lime text-brand-black hover:bg-brand-limeDark transition-all shadow-lg hover:shadow-brand-lime/20 flex items-center justify-center gap-2 group">
               Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
