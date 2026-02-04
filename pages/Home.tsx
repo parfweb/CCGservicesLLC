@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         <>
             <SEO
                 title="Web Design for Plumbers, Electricians & Local Businesses"
-                description="Professional websites for plumbers, electricians, nail salons, and local service businesses. Get more customers calling. Starting at $500."
+                description="Professional websites for plumbers, electricians, nail salons, and local service businesses. Get more customers calling. Starting at $999."
                 canonical="https://ccgsitespark.com/"
             />
             <main>
