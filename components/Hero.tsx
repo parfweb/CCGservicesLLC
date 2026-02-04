@@ -105,7 +105,7 @@ const Hero: React.FC = () => {
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-green-500"></span>
-                Starting at $500
+                Starting at $999
               </span>
             </div>
           </div>
