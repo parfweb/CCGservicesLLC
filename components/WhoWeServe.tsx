@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrench, Zap, Scissors, Paintbrush, TreeDeciduous, Sparkles, Wind, Stethoscope, ArrowRight, CheckCircle2, Droplets } from 'lucide-react';
+import { Wrench, Zap, Scissors, Paintbrush, TreeDeciduous, Sparkles, Wind, Stethoscope, ArrowRight, CheckCircle2, Droplets, GraduationCap, Briefcase, Building2, PartyPopper, Target, Utensils } from 'lucide-react';
 
 const WhoWeServe: React.FC = () => {
     const industries = [
@@ -89,8 +89,8 @@ const WhoWeServe: React.FC = () => {
         },
         {
             icon: <Stethoscope className="w-7 h-7" />,
-            name: "Dental & Medical",
-            link: "/dental-web-design",
+            name: "Medical Facilities",
+            link: "/medical-web-design",
             desc: "Patients expect online booking and secure forms in 2026.",
             benefits: [
                 "HIPAA-compliant patient forms",
@@ -99,6 +99,78 @@ const WhoWeServe: React.FC = () => {
             ],
             color: "bg-teal-500"
         },
+        {
+            icon: <GraduationCap className="w-7 h-7" />,
+            name: "Educational Institutions",
+            link: "/education-web-design",
+            desc: "Enrollment is a competition. Make your school the clear winner.",
+            benefits: [
+                "Student portal integration",
+                "Course catalogs",
+                "Virtual campus tours"
+            ],
+            color: "bg-indigo-500"
+        },
+        {
+            icon: <Briefcase className="w-7 h-7" />,
+            name: "Professional Services",
+            link: "/professional-web-design",
+            desc: "Trust is your currency. Look like the authority you are.",
+            benefits: [
+                "Team bios & expertise dashboard",
+                "Client case studies",
+                "Automated consultation booking"
+            ],
+            color: "bg-slate-600"
+        },
+        {
+            icon: <Building2 className="w-7 h-7" />,
+            name: "Hotels & Accommodations",
+            link: "/hotel-web-design",
+            desc: "Direct bookings mean 30% more profit than OTAs.",
+            benefits: [
+                "Commission-free booking engine",
+                "Room & amenity galleries",
+                "Local guide integration"
+            ],
+            color: "bg-rose-500"
+        },
+        {
+            icon: <PartyPopper className="w-7 h-7" />,
+            name: "Recreational & Event Spaces",
+            link: "/events-web-design",
+            desc: "Fill your calendar with sold-out events, not admin work.",
+            benefits: [
+                "Ticket sales & digital RSVP",
+                "Interactive event calendar",
+                "Venue rental inquiries"
+            ],
+            color: "bg-amber-500"
+        },
+        {
+            icon: <Target className="w-7 h-7" />,
+            name: "Coaching & Training",
+            link: "/coaching-web-design",
+            desc: "Sell your knowledge and expertise, not just your hours.",
+            benefits: [
+                "Member area login",
+                "Course sales funnel",
+                "Webinar registration"
+            ],
+            color: "bg-cyan-600"
+        },
+        {
+            icon: <Utensils className="w-7 h-7" />,
+            name: "Food & Beverages",
+            link: "/restaurant-web-design",
+            desc: "Hungry customers don't wait for PDF menus to load.",
+            benefits: [
+                "Mobile-friendly digital menu",
+                "Table reservation system",
+                "Online ordering integration"
+            ],
+            color: "bg-orange-600"
+        }
     ];
 
     const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {

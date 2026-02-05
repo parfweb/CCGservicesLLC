@@ -165,9 +165,9 @@ const INDUSTRIES: Record<string, IndustryData> = {
         demoComponent: <HVACDemo />
     },
     dental: {
-        title: "Dental & Medical Web Design",
-        metaTitle: "Dental Web Design | Online Booking & HIPAA Forms | CCG SiteSpark",
-        metaDesc: "Patients expect online booking in 2026. We build modern dental websites with HIPAA-compliant forms, online scheduling, and insurance info. Call (917) 768-8896.",
+        title: "Medical Facilities Web Design",
+        metaTitle: "Medical Web Design | Online Booking & HIPAA Forms | CCG SiteSpark",
+        metaDesc: "Patients expect online booking in 2026. We build modern medical websites with HIPAA-compliant forms, online scheduling, and insurance info. Call (917) 768-8896.",
         heroHeadline: "Your Patients Expect Online Booking. Can They Get It?",
         heroSubheadline: "Stop losing new patients to competitors with better websites. We build HIPAA-compliant sites that book appointments 24/7.",
         painPoints: [
@@ -183,6 +183,146 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Modern, trust-building design"
         ],
         demoComponent: <DentalDemo />
+    },
+    medical: {
+        title: "Medical Facilities Web Design",
+        metaTitle: "Medical Web Design | Online Booking & HIPAA Forms | CCG SiteSpark",
+        metaDesc: "Patients expect online booking in 2026. We build modern medical websites with HIPAA-compliant forms, online scheduling, and insurance info. Call (917) 768-8896.",
+        heroHeadline: "Your Patients Expect Online Booking. Can They Get It?",
+        heroSubheadline: "Stop losing new patients to competitors with better websites. We build HIPAA-compliant sites that book appointments 24/7.",
+        painPoints: [
+            "Front desk drowning in phone calls?",
+            "New patients going to competitors?",
+            "Paper forms wasting everyone's time?",
+            "Website looks outdated and unprofessional?"
+        ],
+        benefits: [
+            "HIPAA-compliant patient forms",
+            "24/7 online appointment booking",
+            "Insurance & payment info display",
+            "Modern, trust-building design"
+        ],
+        demoComponent: <DentalDemo />
+    },
+    education: {
+        title: "Education Web Design",
+        metaTitle: "School & Education Web Design | Enrollment Funnels | CCG SiteSpark",
+        metaDesc: "Enrollment is a competition. Make your school the clear winner with a site that showcases your campus, programs, and student life.",
+        heroHeadline: "Enrollment is a Competition. Make Your School the Clear Winner.",
+        heroSubheadline: "Prospective students (and parents) judge your school by its website. Give them a virtual tour that convinces them to apply.",
+        painPoints: [
+            "Low enrollment numbers?",
+            "Confusing application process?",
+            "Can't showcase campus culture?",
+            "Outdated course catalogs?"
+        ],
+        benefits: [
+            "Student portal integration",
+            "Course catalog showcase",
+            "Virtual campus tours",
+            "Easy online applications"
+        ],
+        demoComponent: <ConstructOneDemo />
+    },
+    professional: {
+        title: "Professional Services Web Design",
+        metaTitle: "Professional Services Web Design | Build Authority | CCG SiteSpark",
+        metaDesc: "Trust is your currency. We build authoritative websites for consultants, firms, and agencies that turn visitors into high-ticket clients.",
+        heroHeadline: "Trust is Your Currency. Look Like the Authority You Are.",
+        heroSubheadline: "Clients hire experts. Your website needs to scream competence, professionalism, and results from the very first second.",
+        painPoints: [
+            "Website looks 'home-made'?",
+            "Can't showcase expertise?",
+            "Low lead quality?",
+            "No automated scheduling?"
+        ],
+        benefits: [
+            "Team bios & expertise dashboard",
+            "Client case studies & results",
+            "Automated consultation booking",
+            "Lead magnet integration"
+        ],
+        demoComponent: <ConstructOneDemo />
+    },
+    hotel: {
+        title: "Hotel & Accommodation Web Design",
+        metaTitle: "Hotel Web Design | Direct Booking Engine | CCG SiteSpark",
+        metaDesc: "Stop paying 30% to OTAs. We build hotel websites with commission-free booking engines and stunning amenity galleries.",
+        heroHeadline: "Direct Bookings Mean 30% More Profit. Stop Feeding the OTAs.",
+        heroSubheadline: "Your website should be your #1 booking channel. We build sites that sell the experience and capture the reservation instantly.",
+        painPoints: [
+            "High OTA commissions?",
+            "Empty rooms mid-week?",
+            "Website doesn't show amenities?",
+            "Booking process too complex?"
+        ],
+        benefits: [
+            "Commission-free booking engine",
+            "Room & amenity galleries",
+            "Local guide & experience pages",
+            "Special offer promotions"
+        ],
+        demoComponent: <ConstructOneDemo />
+    },
+    events: {
+        title: "Event Venue Web Design",
+        metaTitle: "Event Venue Web Design | Sell Out Tickets | CCG SiteSpark",
+        metaDesc: "Fill your calendar with sold-out events. We build venue websites with ticket sales, RSVP management, and interactive calendars.",
+        heroHeadline: "Fill Your Calendar With Sold-Out Events, Not Admin Work.",
+        heroSubheadline: "From weddings to corporate retreats, your venue needs a site that handles inquiries, tours, and bookings on autopilot.",
+        painPoints: [
+            "Endless 'is this date free?' emails?",
+            "Trouble selling tickets online?",
+            "Can't visualize the venue space?",
+            "Double-booking headaches?"
+        ],
+        benefits: [
+            "Ticket sales & digital RSVP",
+            "Interactive event calendar",
+            "Venue 360 virtual tours",
+            "Automated inquiry responses"
+        ],
+        demoComponent: <ConstructOneDemo />
+    },
+    coaching: {
+        title: "Coaching & Training Web Design",
+        metaTitle: "Coaching Web Design | Sell Courses & memberships | CCG SiteSpark",
+        metaDesc: "Sell your knowledge, not just your hours. We build coaching sites with member areas, course funnels, and webinar registration.",
+        heroHeadline: "Sell Your Knowledge and Expertise, Not Just Your Hours.",
+        heroSubheadline: "Scale your coaching business with a site that sells courses, memberships, and group programs while you sleep.",
+        painPoints: [
+            "Trading time for money?",
+            "Can't manage member access?",
+            "Confusing checkout process?",
+            "Low webinar attendance?"
+        ],
+        benefits: [
+            "Member area & course login",
+            "High-converting sales funnels",
+            "Webinar registration pages",
+            "Automated email sequences"
+        ],
+        demoComponent: <ConstructOneDemo />
+    },
+    restaurant: {
+        title: "Food & Beverage Web Design",
+        metaTitle: "Restaurant Web Design | Online Ordering & Menus | CCG SiteSpark",
+        metaDesc: "Hungry customers don't wait. We build restaurant websites with mobile-first menus, table reservations, and zero-fee online ordering.",
+        heroHeadline: "Hungry Customers Don't Wait for PDF Menus to Load.",
+        heroSubheadline: "Give them what they want: A mouth-watering menu on their phone, a 'Reserve Table' button, and online ordering that works.",
+        painPoints: [
+            "PDF menus impossible to read?",
+            "Paying 30% to delivery apps?",
+            "Empty tables on Tuesdays?",
+            "Phone tied up taking orders?"
+        ],
+        benefits: [
+            "Mobile-friendly digital menu",
+            "Zero-fee online ordering",
+            "Table reservation system",
+            "Catering request forms"
+        ],
+        demoComponent: <ConstructOneDemo />
     }
 };
 
