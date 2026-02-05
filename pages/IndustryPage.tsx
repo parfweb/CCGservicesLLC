@@ -323,6 +323,26 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Catering request forms"
         ],
         demoComponent: <ConstructOneDemo />
+    },
+    ecommerce: {
+        title: "Amazon & E-commerce Web Design",
+        metaTitle: "E-commerce Web Design | Buy with Prime Integration | CCG SiteSpark",
+        metaDesc: "Scale your brand with a custom e-commerce site that integrates 'Buy with Prime'. Get the trust of Amazon with your own branding. Call (917) 768-8896.",
+        heroHeadline: "The Trust of Amazon. The Branding of You.",
+        heroSubheadline: "Don't just sell on Amazon. Build your own asset. We build high-converting e-commerce sites with seamless 'Buy with Prime' integration.",
+        painPoints: [
+            "Giving 15%+ to marketplaces?",
+            "No customer email access?",
+            "Hard to build brand loyalty?",
+            "Logistics nightmares?"
+        ],
+        benefits: [
+            "Buy with Prime integration (Trust)",
+            "Own your customer data (Email/SMS)",
+            "Sync with Amazon FBA inventory",
+            "Zero marketplace fees on direct sales"
+        ],
+        demoComponent: <ConstructOneDemo />
     }
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrench, Zap, Scissors, Paintbrush, TreeDeciduous, Sparkles, Wind, Stethoscope, ArrowRight, CheckCircle2, Droplets, GraduationCap, Briefcase, Building2, PartyPopper, Target, Utensils } from 'lucide-react';
+import { Wrench, Zap, Scissors, Paintbrush, TreeDeciduous, Sparkles, Wind, Stethoscope, ArrowRight, CheckCircle2, Droplets, GraduationCap, Briefcase, Building2, PartyPopper, Target, Utensils, ShoppingBag } from 'lucide-react';
 
 const WhoWeServe: React.FC = () => {
     const industries = [
@@ -170,6 +170,18 @@ const WhoWeServe: React.FC = () => {
                 "Online ordering integration"
             ],
             color: "bg-orange-600"
+        },
+        {
+            icon: <ShoppingBag className="w-7 h-7" />,
+            name: "Amazon & E-commerce",
+            link: "/ecommerce-web-design",
+            desc: "Boost trust and sales by offering 'Buy with Prime' on your custom brand site.",
+            benefits: [
+                "Buy with Prime integration",
+                "Sync with Amazon FBA inventory",
+                "Conversion-focused product pages"
+            ],
+            color: "bg-blue-600"
         }
     ];
 
