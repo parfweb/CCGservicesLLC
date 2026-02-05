@@ -11,6 +11,14 @@ import HVACDemo from '../components/demos/HVACDemo';
 import LandscapingDemo from '../components/demos/LandscapingDemo';
 import PainterDemo from '../components/demos/PainterDemo';
 import DentalDemo from '../components/demos/DentalDemo';
+import MedicalDemo from '../components/demos/MedicalDemo';
+import EducationDemo from '../components/demos/EducationDemo';
+import ProfessionalDemo from '../components/demos/ProfessionalDemo';
+import HotelDemo from '../components/demos/HotelDemo';
+import EventsDemo from '../components/demos/EventsDemo';
+import CoachingDemo from '../components/demos/CoachingDemo';
+import RestaurantDemo from '../components/demos/RestaurantDemo';
+import EcommerceDemo from '../components/demos/EcommerceDemo';
 
 interface IndustryData {
     title: string;
@@ -182,7 +190,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Insurance & payment info display",
             "Modern, trust-building design"
         ],
-        demoComponent: <DentalDemo />
+        demoComponent: <MedicalDemo />
     },
     medical: {
         title: "Medical Facilities Web Design",
@@ -202,7 +210,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Insurance & payment info display",
             "Modern, trust-building design"
         ],
-        demoComponent: <DentalDemo />
+        demoComponent: <MedicalDemo />
     },
     education: {
         title: "Education Web Design",
@@ -222,7 +230,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Virtual campus tours",
             "Easy online applications"
         ],
-        demoComponent: <ConstructOneDemo />
+        demoComponent: <EducationDemo />
     },
     professional: {
         title: "Professional Services Web Design",
@@ -242,7 +250,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Automated consultation booking",
             "Lead magnet integration"
         ],
-        demoComponent: <ConstructOneDemo />
+        demoComponent: <ProfessionalDemo />
     },
     hotel: {
         title: "Hotel & Accommodation Web Design",
@@ -262,7 +270,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Local guide & experience pages",
             "Special offer promotions"
         ],
-        demoComponent: <ConstructOneDemo />
+        demoComponent: <HotelDemo />
     },
     events: {
         title: "Event Venue Web Design",
@@ -282,7 +290,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Venue 360 virtual tours",
             "Automated inquiry responses"
         ],
-        demoComponent: <ConstructOneDemo />
+        demoComponent: <EventsDemo />
     },
     coaching: {
         title: "Coaching & Training Web Design",
@@ -302,7 +310,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Webinar registration pages",
             "Automated email sequences"
         ],
-        demoComponent: <ConstructOneDemo />
+        demoComponent: <CoachingDemo />
     },
     restaurant: {
         title: "Food & Beverage Web Design",
@@ -322,7 +330,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Table reservation system",
             "Catering request forms"
         ],
-        demoComponent: <ConstructOneDemo />
+        demoComponent: <RestaurantDemo />
     },
     ecommerce: {
         title: "Amazon & E-commerce Web Design",
@@ -342,7 +350,7 @@ const INDUSTRIES: Record<string, IndustryData> = {
             "Sync with Amazon FBA inventory",
             "Zero marketplace fees on direct sales"
         ],
-        demoComponent: <ConstructOneDemo />
+        demoComponent: <EcommerceDemo />
     }
 };
 

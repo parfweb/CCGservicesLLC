@@ -35,8 +35,12 @@ function App() {
     }
   }, []);
 
-  // Cast leads once
-  const allLeads = selectedLeads as Lead[];
+  // Map and convert leads - rating comes as string from JSON but Lead expects number
+  // IMPORTANT: Memoize this to prevent infinite re-renders
+  const allLeads = useMemo(() => selectedLeads.map(lead => ({
+    ...lead,
+    rating: lead.rating ? parseFloat(lead.rating) : undefined
+  })) as Lead[], []);
 
   // Generate pitches ONCE on initial load (memoized)
   const pitchMap = useMemo(() => generateAllPitches(allLeads), [allLeads]);

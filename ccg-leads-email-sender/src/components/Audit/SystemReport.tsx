@@ -69,7 +69,7 @@ export const SystemReport: React.FC<{ lead: Lead }> = ({ lead }) => {
     const mobileStatus = displayMobileIssue ? (isFreeProvider ? 'BASIC / LIMITED' : 'NOT OPTIMIZED') :
         isOffline ? 'UNREACHABLE' : 'LAYOUT ISSUES'; // Never show "Optimized"
 
-    const isGreenBoard = !displayMobileIssue && !displayServerIssue && !displaySeoIssue; // Almost never true now
+
 
     const downloadPDF = async () => {
         const element = document.getElementById('system-report-card');

@@ -166,11 +166,11 @@ const getStat = (): string => {
 
 const getPitch = (industry: string): string => {
     const pitches = [
-        `At CCG SiteSpark, we help ${industry}s get more calls and customers with fast, modern websites built for Google rankings.`,
-        `We build websites specifically for local businesses like yours - designed to rank well and convert visitors into customers.`,
-        `I run a small web agency focused on local service businesses. We create sites that actually bring in leads.`,
-        `CCG SiteSpark creates affordable websites for businesses like yours, focused on one thing: getting you more customers.`,
-        `We specialize in websites for ${industry}s - fast-loading, mobile-friendly, and designed to show up on Google.`,
+        `I run a small web agency based right here in New York. We create sites for local ${industry}s that actually bring in leads.`,
+        `I'm a developer here in New York and I help local service businesses get more calls with simple, modern websites.`,
+        `We're a small NY-based team that builds websites for local businesses like yours - nothing fancy, just sites that work.`,
+        `I work with a lot of ${industry}s in the area. We make sites that are easy to find and easy to use.`,
+        `CCG SiteSpark is my small agency based in New York. We help local businesses get found online.`,
     ];
     return pick(pitches);
 };
@@ -198,15 +198,15 @@ export const generatePitch = (lead: Lead): { subject: string; body: string } => 
 
     // 1. Broken / Offline
     if (lead.status.includes('BROKEN') || (analysis && analysis.status === 'BROKEN')) {
-        subject = `Is ${businessName} still open? (Site unreachable)`;
-        body = `Hi,\n\nI tried to visit your website today and it completely failed to load.\n\nAre you still in business? If you are paying for hosting, it's not working.\n\nI can get this back online for you in an hour.`;
+        subject = `Quick question about your website`;
+        body = `Hi,\n\nI tried to visit your website today and it looks like it's actually down right now.\n\nI'm a developer based here in New York and I can help get this back up for you today if you need a hand.\n\n${getCTA()}`;
         return { subject, body };
     }
 
     // 2. Ugly / Unfinished (New Logic)
     if (analysis && (analysis.isUgly || analysis.isThin)) {
-        subject = `Honest feedback on ${businessName}`;
-        body = `Hi,\n\nI visited your website today but noticed it looks unfinished or broken.\n\nFirst impressions are everything. If a customer sees a broken layout or "Lorem Ipsum" text, they leave immediately.\n\nWe should fix this immediately to stop losing customers.\n\n${getCTA()}`;
+        subject = `I noticed something on your website`;
+        body = `Hi,\n\nI visited your website today but noticed it looks a bit unfinished in some spots.\n\nI'm over in New York and I've seen how much first impressions matter for local businesses. If a customer sees something off, they usually just move on to the next person.\n\nHappy to help you clean this up if you're interested.\n\n${getCTA()}`;
         return { subject, body };
     }
 
@@ -219,16 +219,10 @@ export const generatePitch = (lead: Lead): { subject: string; body: string } => 
         subject = getSubject(businessName, 'bad');
         body = `${getOpener(businessName, industry)}\n\n${getBadWebsiteProblem()}\n\n${getStat()}\n\n${getPitch(industry)}\n\n${getCTA()}`;
     } else {
-        // 4. Good Site (Hyper-Personalized)
+        // 4. Good Site (Organic NY Approach - Direct but Friendly)
         subject = getSubject(businessName, 'good');
 
-        // Inject specific "Proof"
-        let proof = "";
-        if (analysis) {
-            proof = `I noticed you are running on **${analysis.server}** and have about **${analysis.linkCount}** links on the homepage.`;
-        }
-
-        body = `${getOpener(businessName, industry)}\n\nI analyzed your website. ${proof} While it is online, I found a few hidden technical issues that might be blocking your SEO growth.\n\nSpeed, SEO, and mobile-friendliness are the big ones - small tweaks can make a real difference.\n\n${getPitch(industry)}\n\n${getCTA()}`;
+        body = `${getOpener(businessName, industry)}\n\nI took a look at your website and noticed a few things that could be costing you customers. Things like how it shows up on Google, how fast it loads, how it looks on phones - the stuff that makes people either call you or click away.\n\nI'm a developer based in New York and I work with a lot of local businesses on exactly this kind of thing.\n\n${getCTA()}`;
     }
 
     return { subject, body };

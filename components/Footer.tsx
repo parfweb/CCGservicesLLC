@@ -133,7 +133,14 @@ const Footer: React.FC = () => {
                 <li><a href="/nail-salon-web-design" onClick={(e) => handleNavigation(e, '/nail-salon-web-design')} className="text-zinc-400 hover:text-white transition-colors">Nail Salons</a></li>
                 <li><a href="/painter-web-design" onClick={(e) => handleNavigation(e, '/painter-web-design')} className="text-zinc-400 hover:text-white transition-colors">Painters</a></li>
                 <li><a href="/cleaning-web-design" onClick={(e) => handleNavigation(e, '/cleaning-web-design')} className="text-zinc-400 hover:text-white transition-colors">Cleaning Services</a></li>
-                <li><a href="/dental-web-design" onClick={(e) => handleNavigation(e, '/dental-web-design')} className="text-zinc-400 hover:text-white transition-colors">Dental & Medical</a></li>
+                <li><a href="/medical-web-design" onClick={(e) => handleNavigation(e, '/medical-web-design')} className="text-zinc-400 hover:text-white transition-colors">Medical Facilities</a></li>
+                <li><a href="/education-web-design" onClick={(e) => handleNavigation(e, '/education-web-design')} className="text-zinc-400 hover:text-white transition-colors">Educational Institutions</a></li>
+                <li><a href="/restaurant-web-design" onClick={(e) => handleNavigation(e, '/restaurant-web-design')} className="text-zinc-400 hover:text-white transition-colors">Food & Beverages</a></li>
+                <li><a href="/professional-web-design" onClick={(e) => handleNavigation(e, '/professional-web-design')} className="text-zinc-400 hover:text-white transition-colors">Professional Services</a></li>
+                <li><a href="/hotel-web-design" onClick={(e) => handleNavigation(e, '/hotel-web-design')} className="text-zinc-400 hover:text-white transition-colors">Hotels & Accommodations</a></li>
+                <li><a href="/events-web-design" onClick={(e) => handleNavigation(e, '/events-web-design')} className="text-zinc-400 hover:text-white transition-colors">Event Spaces</a></li>
+                <li><a href="/coaching-web-design" onClick={(e) => handleNavigation(e, '/coaching-web-design')} className="text-zinc-400 hover:text-white transition-colors">Coaching & Training</a></li>
+                <li><a href="/ecommerce-web-design" onClick={(e) => handleNavigation(e, '/ecommerce-web-design')} className="text-zinc-400 hover:text-white transition-colors">Amazon & E-commerce</a></li>
               </ul>
             </div>
 
